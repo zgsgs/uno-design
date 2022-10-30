@@ -1,0 +1,10 @@
+{
+  "name": "vite-project",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "rimraf dist && vue-tsc --noEmit && vite build"
+  }
+}
