@@ -1,7 +1,7 @@
 import type {
   RipplesInterface,
   RipplesOptionInterface as b,
-} from '~/types'
+} from '~/_types'
 
 /**
  * 按钮点击涟漪效果

@@ -1,4 +1,4 @@
-import { install } from '../../utils'
+import { install } from '../_utils'
 import SvgIcon from './src/svg-icon.vue'
 
 export const USvgIcon = install(SvgIcon)

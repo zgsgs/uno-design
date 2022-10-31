@@ -1,8 +1,8 @@
 <script lang="ts" setup name="USvgIcon">
 import { computed } from 'vue'
 import type { CSSProperties, ComputedRef } from 'vue'
-import { sizeChange } from '../../../utils'
-import type { HandleEventInterface as Handle } from '../../../types'
+import { sizeChange } from '../../_utils'
+import type { HandleEventInterface as Handle } from '../../_types'
 import { Emits, Props } from './props'
 
 const prop = defineProps(Props)

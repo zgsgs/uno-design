@@ -2,12 +2,12 @@
 import { computed, h, ref } from 'vue'
 import type { CSSProperties, ComputedRef, Ref } from 'vue'
 import { USvgIcon } from '../../svg-icon'
-import { FIconLoadingAVue } from '../../../assets/svg'
-import { ChangeColor, Ripples, sizeChange } from '../../../utils'
+import { FIconLoadingAVue } from '../../_assets/svg'
+import { ChangeColor, Ripples, sizeChange } from '../../_utils'
 import type {
   HandleEventInterface as a,
   ClassListInterface as b,
-} from '../../../types'
+} from '../../_types'
 import { Emits, Props } from './props'
 
 const prop = defineProps(Props)

@@ -1,4 +1,4 @@
-import type { ButtonType } from '../src/button/src/type'
+import type { ButtonType } from '../button/src/type'
 
 /**
  * Ripples 类所需要的 props 参数

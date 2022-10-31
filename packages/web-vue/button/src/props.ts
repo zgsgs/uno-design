@@ -4,7 +4,7 @@ import type {
   ButtonSizeType,
   ButtonTargetType,
   ButtonType,
-} from './type.d'
+} from './type'
 
 export const Props = {
   bold: {

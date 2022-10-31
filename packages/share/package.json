@@ -2,10 +2,10 @@
   "name": "share",
   "version": "0.0.0",
   "description": "",
+  "author": "",
+  "license": "ISC",
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+  }
 }
