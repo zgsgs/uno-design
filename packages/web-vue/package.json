@@ -1,7 +1,7 @@
 {
   "name": "@uno-design/web-vue",
   "version": "0.0.0",
-  "description": "",
+  "description": "Uno design can quickly build interactive interfaces in vue3 applications, which looks good.",
   "author": "",
   "license": "ISC",
   "keywords": [

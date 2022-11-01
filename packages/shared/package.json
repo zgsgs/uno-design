@@ -1,7 +1,7 @@
 {
-  "name": "@uno-design/icon",
+  "name": "@uno-design/shared",
   "version": "0.0.0",
-  "description": "Special svg icon library for uno-design.",
+  "description": "",
   "author": "",
   "license": "ISC",
   "main": "index.ts",
