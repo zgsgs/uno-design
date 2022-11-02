@@ -1,7 +1,7 @@
 {
   "name": "@uno-design/cli",
   "version": "0.0.0",
-  "description": "Scaffolding tool for generating components.",
+  "description": "",
   "author": "",
   "license": "ISC",
   "main": "index.ts",
