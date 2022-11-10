@@ -40,7 +40,7 @@ const detectPublic = async (): Promise<void> => {
     process.exit(0)
   }
 
-  logInfo(`F${displayName} 组件创建完成 🎉🎉🎉` + '\n')
+  logInfo(`${upperPrefix}${displayName} 组件创建完成 🎉🎉🎉` + '\n')
 }
 
 detectPublic()
@@ -106,7 +106,8 @@ async function updateComponentEntry(): Promise<void> {
     '../web-vue/components.ts',
   )
   let content: string = (await fsExtra.readFile(entryFilePath)).toString()
-  content = `${content.slice(0, -1)}\nexport { F${displayName} } from './${compName}'\nexport * from './${compName}'\n`
+  // content = `${content.slice(0, -1)}\nexport { ${upperPrefix}${displayName} } from './${compName}'\nexport * from './${compName}'\n`
+  content = `${content.slice(0, -1)}\nexport * from './${compName}'\n`
 
   await fsExtra.writeFile(entryFilePath, content)
 }
