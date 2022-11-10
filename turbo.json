@@ -17,7 +17,7 @@
     },
     "lint:fix": {
     },
-    "plop:comp": {
+    "new": {
     },
     "deploy": {
       "dependsOn": ["build", "test", "lint:fix"],
