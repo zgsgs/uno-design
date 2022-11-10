@@ -16,7 +16,8 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "skipLibCheck": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "jsx": "preserve"
   },
   "include": [
     "packages/**/*.ts",
