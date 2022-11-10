@@ -1,4 +1,4 @@
-<script lang="ts" setup name="<%= upperPrefix %><%= displayName %>">
+<script lang="ts" setup>
 import { Emits, Props } from './props'
 import type { <%= displayName %>PropsType } from './props'
 
