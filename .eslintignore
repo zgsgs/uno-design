@@ -1,0 +1,7 @@
+dist/*
+dist-icon/*
+node_modules/*
+logo/*
+start/dist/*
+start/src/*
+packages/cli/template/*

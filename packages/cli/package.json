@@ -1,11 +1,13 @@
 {
   "name": "@uno-design/cli",
+  "type": "module",
   "version": "0.0.0",
   "description": "",
   "author": "",
   "license": "ISC",
   "main": "index.ts",
+  "module": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "new": "node --trace-warnings --loader ts-node/esm ./index.ts"
   }
 }
