@@ -1,7 +1,7 @@
 import type {
   RipplesInterface,
-  RipplesOptionInterface as b,
-} from '~/_types'
+  RipplesOptionInterface,
+} from '../_types'
 
 /**
  * 按钮点击涟漪效果
@@ -9,9 +9,9 @@ import type {
 export class Ripples implements RipplesInterface {
   evt: MouseEvent
   node: HTMLElement
-  option: b
+  option: RipplesOptionInterface
 
-  constructor(evt: MouseEvent, node: HTMLElement, option: b) {
+  constructor(evt: MouseEvent, node: HTMLElement, option: RipplesOptionInterface) {
     this.evt = evt
     this.node = node
     this.option = option
@@ -73,9 +73,9 @@ export class Ripples implements RipplesInterface {
      * 如果 simple, text 存在其中一个，那么就返回指定的色号，否则返回空字符串
      */
     if (this.option.component === 'u-button') {
-      const { simple, text } = this.option
+      const { simple, text, type } = this.option
 
-      return simple || text ? COLOR_LIST[this.option.type] : ''
+      return simple || text ? COLOR_LIST[type] : ''
     }
 
     // 如果不是按钮组件，则可以直接返回指定色号
