@@ -2,6 +2,7 @@ import { resolve } from 'path'
 import { copyFileSync } from 'fs'
 import vue from '@vitejs/plugin-vue'
 import dts from 'vite-plugin-dts' // https://github.com/qmhc/vite-plugin-dts
+import vueSetupExtend from 'unplugin-vue-setup-extend-plus/vite' // https://github.com/chenxch/unplugin-vue-setup-extend-plus
 import { visualizer } from 'rollup-plugin-visualizer' // https://github.com/btd/rollup-plugin-visualizer
 import type { UserConfigExport } from 'vite'
 import { version } from './packages/web-vue/package.json'
@@ -10,7 +11,7 @@ const move = (): void => {
   const files = [
     { input: './README.md', outDir: 'dist/README.md' },
     {
-      input: './packages/fighting-design/package.json',
+      input: './packages/web-vue/package.json',
       outDir: 'dist/package.json',
     },
     { input: './LICENSE', outDir: 'dist/LICENSE' },
@@ -20,7 +21,7 @@ const move = (): void => {
     copyFileSync(item.input, item.outDir)
   })
 
-  console.warn('\n' + `Fighting Design ${version} 版本打包成功 🎉🎉🎉` + '\n')
+  console.warn('\n' + `Uno Design ${version} 版本打包成功 🎉🎉🎉` + '\n')
 }
 
 export default (): UserConfigExport => {
@@ -36,12 +37,13 @@ export default (): UserConfigExport => {
         insertTypesEntry: true, // 是否生成类型声明入口
         cleanVueFileName: true, // 是否将 '.vue.d.ts' 文件名转换为 '.d.ts'
         copyDtsFiles: true, // 是否将源码里的 .d.ts 文件复制到 outputDir
-        include: ['./packages/fighting-design'], // 手动设置包含路径的 glob
+        include: ['./packages/web-vue'], // 手动设置包含路径的 glob
         // 构建后回调钩子
         afterBuild: (): void => {
           move()
         },
       }),
+      vueSetupExtend(),
       visualizer(),
     ],
     build: {
@@ -53,8 +55,8 @@ export default (): UserConfigExport => {
       outDir: resolve(__dirname, './dist'), // 指定输出路径
       // 库模式 https://cn.vitejs.dev/guide/build.html#library-mode
       lib: {
-        entry: resolve(__dirname, 'packages/fighting-design/index.ts'), // 打包入口
-        name: 'FightingDesign', // 包名
+        entry: resolve(__dirname, 'packages/web-vue/index.ts'), // 打包入口
+        name: 'UnoDesign', // 包名
       },
       // rollup 配置项 https://rollupjs.org/guide/en/#big-list-of-options
       rollupOptions: {

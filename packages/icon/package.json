@@ -4,8 +4,5 @@
   "description": "Special svg icon library for uno-design.",
   "author": "",
   "license": "ISC",
-  "main": "index.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  }
+  "main": "index.ts"
 }
