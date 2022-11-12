@@ -1,0 +1,12 @@
+{
+  "name": "@uno-design/resolver",
+  "version": "1.0.0",
+  "description": "Configuration item for unplugin-vue-components",
+  "license": "MIT",
+  "main": "index",
+  "module": "index",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  }
+}
