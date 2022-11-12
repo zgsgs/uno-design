@@ -1,4 +1,4 @@
-import type { ChangeColorInterface } from '~/_types'
+import type { ChangeColorInterface } from '../_types'
 
 /**
  * 根据传入的 hex 计算出加深和减淡的颜色

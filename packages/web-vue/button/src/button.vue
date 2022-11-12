@@ -51,6 +51,29 @@ const classList: ComputedRef<b> = computed((): b => {
   ] as const
 })
 
+// 样式列表
+const styleList: ComputedRef<CSSProperties> = computed((): CSSProperties => {
+  const { fontSize, fontColor, shadow, color } = prop
+
+  const style: CSSProperties = {
+    '--u-button-font-size': sizeChange(fontSize),
+    '--u-button-font-color': fontColor,
+    '--u-button-box-shadow': shadow,
+  } as CSSProperties
+
+  if (color) {
+    const changeColor: ChangeColor = new ChangeColor(color)
+    const light: string = changeColor.getLightColor(0.4)
+    const dark: string = changeColor.getDarkColor(0.2)
+
+    style['--u-button-default-color'] = color
+    style['--u-button-hover-color'] = light
+    style['--u-button-active-color'] = dark
+  }
+
+  return style
+})
+
 // 点击
 const handleClick: a = (evt: MouseEvent): void => {
   const { disabled, loading, ripples } = prop
@@ -81,29 +104,6 @@ const handleClick: a = (evt: MouseEvent): void => {
 
   emit('click', evt)
 }
-
-// 样式列表
-const styleList: ComputedRef<CSSProperties> = computed((): CSSProperties => {
-  const { fontSize, fontColor, shadow, color } = prop
-
-  const style: CSSProperties = {
-    '--u-button-font-size': sizeChange(fontSize),
-    '--u-button-font-color': fontColor,
-    '--u-button-box-shadow': shadow,
-  } as CSSProperties
-
-  if (color) {
-    const changeColor: ChangeColor = new ChangeColor(color)
-    const light: string = changeColor.getLightColor(0.4)
-    const dark: string = changeColor.getDarkColor(0.2)
-
-    style['--u-button-default-color'] = color
-    style['--u-button-hover-color'] = light
-    style['--u-button-active-color'] = dark
-  }
-
-  return style
-})
 </script>
 
 <template>

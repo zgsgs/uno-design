@@ -1,5 +1,5 @@
 import type { App } from 'vue'
-import type { InstallType } from '~/_types'
+import type { InstallType } from '../_types'
 
 /**
  * 注册组件

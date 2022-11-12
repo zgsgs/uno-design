@@ -1,4 +1,4 @@
-import type { UtilsSizeChangeInterface } from '~/_types'
+import type { UtilsSizeChangeInterface } from '../../_types'
 
 /**
  * 将数字尺寸改为字符串
