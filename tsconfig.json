@@ -1,21 +1,15 @@
-// https://www.typescriptlang.org/tsconfig
 {
+  "extends": "@uno-design/shared/configs/tsconfig.base.json",
   "compilerOptions": {
-    "baseUrl": ".",
     "target": "ESNext",
     "useDefineForClassFields": true,
     "module": "ESNext",
     "lib": ["ESNext", "DOM"],
-    "moduleResolution": "Node",
     "strict": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "esModuleInterop": true,
     "noEmit": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "skipLibCheck": true,
+    "baseUrl": ".",
     "sourceMap": true,
     "jsx": "preserve"
   },

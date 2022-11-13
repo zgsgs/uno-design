@@ -4,8 +4,32 @@
   "description": "",
   "author": "",
   "license": "ISC",
+  "exports": {
+    "./types": {
+      "require": "./dist/types/index.js",
+      "import": "./dist/types/index.mjs"
+    },
+    "./utils": {
+      "require": "./dist/utils/index.js",
+      "import": "./dist/utils/index.mjs"
+    },
+    "./configs/*.json": "./configs/*.json",
+    "./configs/*": {
+      "types": "./dist/configs/*.d.ts",
+      "require": "./dist/configs/*.js",
+      "import": "./dist/configs/*.mjs"
+    }
+  },
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsup --watch",
+    "build": "tsup"
+  },
+  "browser": {
+    "./types": "./dist/types/index.js",
+    "./utils": "./dist/utils/index.js"
+  },
+  "devDependencies": {
+    "tsup": "^5.12.1"
   }
 }
