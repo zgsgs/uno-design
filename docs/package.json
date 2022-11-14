@@ -1,0 +1,21 @@
+{
+  "name": "docs",
+  "version": "0.0.1",
+  "private": true,
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
+  },
+  "dependencies": {
+    "vitepress": "1.0.0-alpha.28"
+  },
+  "devDependencies": {
+    "markdown-it": "^13.0.1",
+    "markdown-it-container": "^3.0.0"
+  }
+}
