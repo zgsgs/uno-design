@@ -1,7 +1,7 @@
 dist/*
 dist-icon/*
+dist-playground/*
+dist-shared/*
 node_modules/*
 logo/*
-start/dist/*
-start/src/*
 packages/cli/template/*

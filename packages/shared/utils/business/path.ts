@@ -4,7 +4,7 @@ import path from 'path'
  * 获取指令运行根路径
  * @descrition 末尾不带斜杠
  */
-export function getRunRootPath() {
+export function getRuntimeRootPath() {
   return path.resolve(process.cwd())
 }
 /**
@@ -21,8 +21,7 @@ export function getRootPath() {
  * @descrition 末尾不带斜杠
  */
 export function getPackagesPath(path = 'packages') {
-  const rootPath = getRootPath()
-  return `${rootPath}/${path}`
+  return `${getRootPath()}/${path}`
 }
 
 /**
@@ -30,6 +29,17 @@ export function getPackagesPath(path = 'packages') {
  * @descrition 末尾不带斜杠
  */
 export function getLocalIconPath() {
-  const packagesPath = getPackagesPath()
-  return `${packagesPath}/icon/src`
+  return `${getPackagesPath()}/icon/src`
+}
+
+/* -- 获取输出路径 -- */
+export function getPlayOutDir() {
+  return `${getRootPath()}/dist-paly`
+}
+
+export function getWebVueOutDir() {
+  return `${getRootPath()}/dist`
+}
+export function getWebVueEntry() {
+  return `${getPackagesPath()}/web-vue/index.ts`
 }

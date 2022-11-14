@@ -104,5 +104,10 @@ export default (): UserConfigExport => {
         ],
       },
     },
+    test: {
+      environment: 'happy-dom',
+      exclude: ['**/cli/template/**'],
+      include: ['**/__test__/*.{test,spec}.{ts,tsx}'],
+    },
   } as UserConfigExport
 }

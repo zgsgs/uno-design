@@ -17,19 +17,22 @@
     "prepare": "husky install",
     "dev": "turbo run dev",
     "clean": "rimraf dist",
-    "build": "turbo run build",
-    "build:all": "pnpm clean && pnpm build:css && pnpm build:theme && vite build",
+    "build": "pnpm clean && pnpm build:css && pnpm build:theme && vite build",
+    "build:all": "turbo run build",
     "build:css": "vite build --config vite.config.css.ts",
     "build:theme": "vite build --config vite.config.theme.ts",
     "build:icon": "rimraf dist-icon && vite build --config vite.config.icon.ts",
+    "build:shared": "rimraf dist-shared && vite build --config vite.config.shared.ts",
     "preview": "turbo run preview",
-    "test": "turbo run test",
+    "test": "vitest",
+    "test:all": "turbo run test",
     "lint": "turbo run lint",
     "lint:fix": "lint-staged",
     "type:check": "turbo run type:check",
     "new": "pnpm run -C packages/cli new",
     "commit": "cz",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "vue": "^3.2.41"

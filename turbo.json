@@ -20,6 +20,9 @@
     "type:check": {
       "outputs": []
     },
+    "lint": {
+      "outputs": []
+    },
     "lint:fix": {
       "outputs": []
     },

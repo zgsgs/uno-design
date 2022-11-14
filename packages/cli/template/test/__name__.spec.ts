@@ -1,10 +1,14 @@
+import type { VueWrapper } from '@vue/test-utils'
 import { mount } from '@vue/test-utils'
-import { describe, expect, test } from 'vitest'
+import { beforeEach, describe, expect, test } from 'vitest'
 import { <%= upperPrefix %><%= displayName %> } from '../index'
 
 describe('<%= displayName %>', () => {
+  let wrapper: VueWrapper
+  beforeEach(() => {
+    wrapper = mount(<%= upperPrefix %><%= displayName %>)
+  })
   test('class', () => {
-    const wrapper = mount(<%= upperPrefix %><%= displayName %>)
     expect(wrapper.classes()).toContain('<%= prefix %>-<%= name %>')
   })
 })
