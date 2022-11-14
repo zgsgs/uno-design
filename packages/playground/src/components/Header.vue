@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
-import { downloadProject } from './download'
-import { Download, GitHub, Moon, Share, Sun } from './icons'
+import { downloadProject } from '../download'
+import { Download, GitHub, Moon, Share, Sun, Vue } from '../icons'
 
 const props = defineProps(['store', 'dev', 'ssr'])
+const emit = defineEmits(['toggleDev', 'toggleSsr'])
 const { store } = props
 
 const currentCommit = __COMMIT__
@@ -92,7 +93,6 @@ async function fetchVersions(): Promise<string[]> {
     <div class="links">
       <div class="version" @click.stop>
         <span class="active-version" @click="toggle">
-          Version
           <span class="number">{{ activeVersion }}</span>
         </span>
         <ul class="versions" :class="{ expanded }">
@@ -113,6 +113,23 @@ async function fetchVersions(): Promise<string[]> {
           </li>
         </ul>
       </div>
+
+      <button
+        title="Toggle development production mode"
+        class="toggle-dev"
+        :class="{ dev }"
+        @click="emit('toggleDev')"
+      >
+        <span>{{ dev ? 'DEV' : 'PROD' }}</span>
+      </button>
+      <button
+        title="Toggle server rendering mode"
+        class="toggle-ssr"
+        :class="{ enabled: ssr }"
+        @click="emit('toggleSsr')"
+      >
+        <span>{{ ssr ? 'SSR ON' : 'SSR OFF' }}</span>
+      </button>
       <button title="Toggle dark mode" class="toggle-dark" @click="toggleDark">
         <Sun class="light" />
         <Moon class="dark" />
@@ -127,14 +144,22 @@ async function fetchVersions(): Promise<string[]> {
       >
         <Download />
       </button>
-      <button title="View on GitHub" class="github">
-        <a
-          href="https://github.com/vuejs/core/tree/main/packages/sfc-playground"
-          target="_blank"
-        >
-          <GitHub />
-        </a>
-      </button>
+      <a
+        title="Vue Site"
+        class="vue"
+        href="https://cn.vuejs.org/"
+        target="_blank"
+      >
+        <Vue />
+      </a>
+      <a
+        title="View on GitHub"
+        class="github"
+        href="https://github.com/zgsgs/uno-design/tree/main/packages/playground"
+        target="_blank"
+      >
+        <GitHub />
+      </a>
     </div>
   </nav>
 </template>
@@ -199,6 +224,8 @@ h1 img {
 
 .links {
   display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .version {

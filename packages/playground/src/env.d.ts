@@ -1,10 +1,5 @@
 /// <reference types="vite/client" />
 
-declare module '*.vue' {
-  import type { DefineComponent } from 'vue'
-  const component: DefineComponent<{}, {}, unknown>
-  export default component
-}
 // Global compile-time constants
 declare var __DEV__: boolean
 declare var __TEST__: boolean
@@ -22,3 +17,37 @@ declare var __COMPAT__: boolean
 declare var __FEATURE_OPTIONS_API__: boolean
 declare var __FEATURE_PROD_DEVTOOLS__: boolean
 declare var __FEATURE_SUSPENSE__: boolean
+
+// for tests
+declare namespace jest {
+  interface Matchers<R, T> {
+    toHaveBeenWarned(): R
+    toHaveBeenWarnedLast(): R
+    toHaveBeenWarnedTimes(n: number): R
+  }
+}
+
+declare module '*.vue' {}
+
+declare module 'file-saver' {
+  export function saveAs(blob: any, name: any): void
+}
+
+declare module '@vue/repl' {
+  import { ComponentOptions } from '@vue/runtime-core'
+  import type { OutputModes, SFCOptions, Store, StoreOptions, StoreState } from '@vue/repl'
+  import { File, compileFile } from '@vue/repl'
+
+  const Repl: ComponentOptions
+  const ReplStore: any
+  export { Repl, ReplStore }
+  export { OutputModes, SFCOptions, Store, StoreOptions, StoreState }
+  export { File, compileFile }
+}
+
+declare interface String {
+  /**
+   * @deprecated Please use String.prototype.slice instead of String.prototype.substring in the repository.
+   */
+  substring(start: number, end?: number): string
+}
