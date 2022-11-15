@@ -27,3 +27,4 @@ dist-*
 
 .turbo
 stats.html
+coverage
