@@ -43,7 +43,7 @@ const hiddenResult = (): void => {
 
 <template>
   <div class="vp-search">
-    <f-input
+    <u-input
       v-model="value"
       type="text"
       placeholder="搜索组件"

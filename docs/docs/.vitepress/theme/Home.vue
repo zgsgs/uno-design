@@ -5,7 +5,7 @@ import { bottomList, contributors } from './src'
 <template>
   <div id="banner">
     <div class="logo_box">
-      <f-image
+      <u-image
         class="logo"
         :draggable="false"
         src="https://tianyuhao.cn/images/uno-design/UnoDesign.svg"
@@ -25,15 +25,15 @@ import { bottomList, contributors } from './src'
       >
       <h1 class="title">
         Uno Design
-        <f-link
+        <u-link
           href="https://github.com/zgsgs/uno-design"
           target="_blank"
         >
-          <f-image
+          <u-image
             src="https://img.shields.io/github/stars/UnoDesign/uno-design?style=social"
             alt="Uno Design"
           />
-        </f-link>
+        </u-link>
       </h1>
 
       <h1 class="subtitle">
@@ -44,35 +44,35 @@ import { bottomList, contributors } from './src'
         是一款灵活、优质的组件库，为开发者、设计师准备。希望开发者可以借用其中的设计，在不久的将来，孕育出更高阶的组件库。
       </p>
 
-      <f-button
+      <u-button
         class="start-btn"
         type="primary"
         size="large"
         href="/docs/install"
       >
         开始使用
-      </f-button>
+      </u-button>
     </div>
 
     <!-- 贡献者 -->
     <div id="contributors">
-      <f-text block center bold size="26px">
+      <u-text block center bold size="26px">
         Contributors
-      </f-text>
+      </u-text>
       <div class="contributors-box">
-        <f-link
+        <u-link
           v-for="(item, i) in contributors"
           :key="i"
           :href="item.homePage"
           target="_blank"
         >
-          <f-avatar round :src="item.avatar" />
-        </f-link>
+          <u-avatar round :src="item.avatar" />
+        </u-link>
       </div>
 
-      <f-button simple type="primary" href="/docs/contributing.html" round>
+      <u-button simple type="primary" href="/docs/contributing.html" round>
         加入其中
-      </f-button>
+      </u-button>
     </div>
 
     <!-- 页脚 -->
@@ -83,17 +83,17 @@ import { bottomList, contributors } from './src'
             {{ listItem.title }}
           </h4>
           <li v-for="(list, i) in listItem.item" :key="i" class="item">
-            <f-link target="_blank" :href="list.link">
+            <u-link target="_blank" :href="list.link">
               {{ list.text }}
-            </f-link>
+            </u-link>
           </li>
         </ul>
       </div>
 
       <p class="code">
-        <f-link target="_blank" href="https://beian.miit.gov.cn">
+        <u-link target="_blank" href="https://beian.miit.gov.cn">
           UnoDesign | 浙ICP备2021024540号-2
-        </f-link>
+        </u-link>
       </p>
     </div>
   </div>
@@ -174,12 +174,12 @@ import { bottomList, contributors } from './src'
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 
-        .f-image {
+        .u-image {
           margin-left: 20px;
         }
       }
 
-      .f-button {
+      .u-button {
         margin-top: 19px;
       }
 
@@ -199,7 +199,7 @@ import { bottomList, contributors } from './src'
         margin-top: 30px;
       }
 
-      .f-button-primary {
+      .u-button-primary {
         margin-top: 30px;
       }
     }
@@ -213,11 +213,11 @@ import { bottomList, contributors } from './src'
       align-items: center;
       flex-direction: column;
 
-      .f-text {
+      .u-text {
         margin-bottom: 40px;
       }
 
-      .f-button {
+      .u-button {
         margin-top: 40px;
       }
 
@@ -229,7 +229,7 @@ import { bottomList, contributors } from './src'
         align-items: center;
         flex-wrap: wrap;
 
-        .f-avatar {
+        .u-avatar {
           margin: 5px;
         }
       }
