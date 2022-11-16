@@ -83,20 +83,20 @@ createApp(App).use(FButton).use(FCard).mount('#app')
 
 <body>
   <div id="app">
-    <f-space>
-      <f-button round type="default">默认按钮</f-button>
-      <f-button round type="primary">主要按钮</f-button>
-      <f-button round type="success">成功按钮</f-button>
-      <f-button round type="danger">危险按钮</f-button>
-      <f-button round type="warning">警告按钮</f-button>
-    </f-space>
+    <u-space>
+      <u-button round type="default">默认按钮</u-button>
+      <u-button round type="primary">主要按钮</u-button>
+      <u-button round type="success">成功按钮</u-button>
+      <u-button round type="danger">危险按钮</u-button>
+      <u-button round type="warning">警告按钮</u-button>
+    </u-space>
 
-    <f-divider>华丽的分隔线</f-divider>
+    <u-divider>华丽的分隔线</u-divider>
 
-    <f-button type="primary" @click="visible = true">打开 Dialog</f-button>
-    <f-dialog title="Title" v-model:visible="visible">
+    <u-button type="primary" @click="visible = true">打开 Dialog</u-button>
+    <u-dialog title="Title" v-model:visible="visible">
       欢迎使用 Uno Design！
-    </f-dialog>
+    </u-dialog>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.global.js"></script>

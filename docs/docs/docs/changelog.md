@@ -1,6 +1,6 @@
 # 更新日志
 
-中文 | [英文](https://github.com/UnoDesign/uno-design/blob/master/CHANGELOG.en-US.md)
+中文 | [英文](https://github.com/zgsgs/uno-design/blob/main/CHANGELOG.en-US.md)
 
 ## 0.8.1-alpha.4 (2022-11-13)
 
@@ -29,7 +29,7 @@
 **修复**
 
 - 修复 `f-button` 组件自定义颜色的样式细节
-- 修复 `f-table` 组件样式细节
+- 修复 `f-table` 组件样式细节pnpm
 
 ## 0.8.1-alpha.1 (2022-11-08)
 
@@ -95,14 +95,14 @@
 
 ## 0.8.0-alpha.2 (2022-10-28)
 
-- 修复按需导入组件类型的问题 [#232](https://github.com/UnoDesign/uno-design/pull/232)
+- 修复按需导入组件类型的问题 [#232](https://github.com/zgsgs/uno-design/pull/232)
 
 ## 0.8.0-alpha.1 (2022-10-28)
 
 - 修复一些类型的问题
 - 优化组件代码属性提示
 - 优化构建产物
-- 优化 `f-image-preview` 组件样式细节 [#227](https://github.com/UnoDesign/uno-design/pull/227)
+- 优化 `f-image-preview` 组件样式细节 [#227](https://github.com/zgsgs/uno-design/pull/227)
 
 ## 0.7.1-alpha.2 (2022-10-26)
 
@@ -532,7 +532,7 @@
 
 ## 0.5.0-bate.1 (2022-08-08)
 
-主要修复了打包的相关的配置项，在[上一个版本](https://github.com/UnoDesign/uno-design/releases/tag/0.4.2-bate.9)中，如果需要按需引入组件，那么会有很多异常的错误信息，这个版本主要是针对打包做了很大的优化，已经修复了按需引入导致的致命错误。
+主要修复了打包的相关的配置项，在[上一个版本](https://github.com/zgsgs/uno-design/releases/tag/0.4.2-bate.9)中，如果需要按需引入组件，那么会有很多异常的错误信息，这个版本主要是针对打包做了很大的优化，已经修复了按需引入导致的致命错误。
 
 对于目录结构也做了很大程度的优化，之前是将 `utils` 目录是单独抽离出来，但是现在也和组件是同级关系，只为了能够更好的打包。
 

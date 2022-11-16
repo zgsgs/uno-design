@@ -14,7 +14,7 @@ export default defineConfig({
     socialLinks: [
       {
         icon: 'github',
-        link: 'https://github.com/UnoDesign/uno-design',
+        link: 'https://github.com/zgsgs/uno-design',
       },
     ],
     logo: 'https://tianyuhao.cn/images/uno-design/UnoDesign.svg',

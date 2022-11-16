@@ -26,7 +26,7 @@ import { bottomList, contributors } from './src'
       <h1 class="title">
         Uno Design
         <f-link
-          href="https://github.com/UnoDesign/uno-design"
+          href="https://github.com/zgsgs/uno-design"
           target="_blank"
         >
           <f-image

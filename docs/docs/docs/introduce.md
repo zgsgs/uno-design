@@ -2,7 +2,7 @@
 
 🌈 Uno Design 可在 vue3 应用程序中快速构建交互界面，看起来还不错。
 
-中文 | <a href="https://github.com/UnoDesign/uno-design/blob/master/README.en-US.md">English</a>
+中文 | <a href="https://github.com/zgsgs/uno-design/blob/main/README.en-US.md">English</a>
 
 ## ✨ 特性
 
@@ -27,12 +27,12 @@
 
 ## 💌 特别感谢
 
-感谢所有已经为 `Uno Design` [做出贡献的人](https://github.com/UnoDesign/uno-design/graphs/contributors)！
+感谢所有已经为 `Uno Design` [做出贡献的人](https://github.com/zgsgs/uno-design/graphs/contributors)！
 
-<a href="https://github.com/UnoDesign/uno-design/graphs/contributors">
+<a href="https://github.com/zgsgs/uno-design/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=UnoDesign/uno-design" />
 </a>
 
 ## 💬 执照
 
-[MIT](https://github.com/UnoDesign/uno-design/blob/master/LICENSE)
+[MIT](https://github.com/zgsgs/uno-design/blob/main/LICENSE)

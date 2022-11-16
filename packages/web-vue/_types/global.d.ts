@@ -1,6 +1,6 @@
 import type * as components from './components'
 
-// https://github.com/johnsoncodehk/volar/blob/master/extensions/vscode-vue-language-features/README.md
+// https://github.com/johnsoncodehk/volar/blob/main/extensions/vscode-vue-language-features/README.md
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {

@@ -9,7 +9,7 @@ export const bottomList = [
       { text: 'Github 组织', link: 'https://github.com/UnoDesign' },
       {
         text: 'Github 仓库',
-        link: 'https://github.com/UnoDesign/uno-design',
+        link: 'https://github.com/zgsgs/uno-design',
       },
       { text: 'Npm 组织', link: 'https://www.npmjs.com/org/uno-design' },
       { text: 'Npm 仓库', link: 'https://www.npmjs.com/package/uno-design' },
@@ -29,15 +29,15 @@ export const bottomList = [
     item: [
       {
         text: '报告问题',
-        link: 'https://github.com/UnoDesign/uno-design/issues',
+        link: 'https://github.com/zgsgs/uno-design/issues',
       },
       {
         text: '发起讨论',
-        link: 'https://github.com/UnoDesign/uno-design/discussions',
+        link: 'https://github.com/zgsgs/uno-design/discussions',
       },
       {
         text: '贡献指南',
-        link: 'https://github.com/UnoDesign/uno-design/blob/master/CONTRIBUTING.md',
+        link: 'https://github.com/zgsgs/uno-design/blob/main/CONTRIBUTING.md',
       },
     ],
   },
