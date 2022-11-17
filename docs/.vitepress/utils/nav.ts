@@ -1,4 +1,4 @@
-import { version } from '../../../../packages/web-vue/package.json'
+import { version } from '../../../packages/web-vue/package.json'
 
 /**
  * 顶部导航栏菜单

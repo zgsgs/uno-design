@@ -30,7 +30,7 @@ import { bottomList, contributors } from './src'
           target="_blank"
         >
           <u-image
-            src="https://img.shields.io/github/stars/UnoDesign/uno-design?style=social"
+            src="https://img.shields.io/github/stars/zgsgs/uno-design?style=social"
             alt="Uno Design"
           />
         </u-link>
@@ -66,7 +66,7 @@ import { bottomList, contributors } from './src'
           :href="item.homePage"
           target="_blank"
         >
-          <u-avatar round :src="item.avatar" />
+          <!-- <u-avatar round :src="item.avatar" /> -->
         </u-link>
       </div>
 

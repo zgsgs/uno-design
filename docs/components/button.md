@@ -2,14 +2,30 @@
 
 功能很强大的按钮
 
-- [源代码](https://github.com/UnoDesign/uno-design/tree/master/packages/uno-design/button)
-- [文档编辑](https://github.com/UnoDesign/uno-design/blob/master/docs/docs/components/button.md)
+- [源代码](https://github.com/zgsgs/uno-design/tree/master/packages/uno-design/button)
+- [文档编辑](https://github.com/zgsgs/uno-design/blob/master/docs/docs/components/button.md)
 
 ## 基本使用
 
 `type` 属性可以配置不同的按钮类型，展示不同的颜色状态
 
 `simple` 属性可以配置简约的按钮，样式依然由 `type` 控制
+
+<script setup>
+  // 这个 demo1 重复了多次，复制修改的时候容易漏掉
+  import UButton from '../../packages/web-vue/button'
+</script>
+<DemoContainer title="基本使用">
+  <ClientOnly>
+  	<UButton type="success">成功按钮</UButton>
+  </ClientOnly>
+  <details>
+    <summary>查看代码</summary>
+<!-- 这个源码引用方式是 vitepress 提供的 -->
+
+<<< components/_demos/button.vue
+  </details>
+</DemoContainer>
 
 ::: demo
 
@@ -245,24 +261,24 @@
 ::: demo
 
 <template #source>
-<u-button-group>
+<!-- <u-button-group> -->
 <u-button round type="primary">左边的</u-button>
 <u-button round type="primary">中间的</u-button>
 <u-button round type="primary">右边的</u-button>
-</u-button-group>
+<!-- </u-button-group> -->
 
 <br />
 <br />
 
-<u-button-group vertical>
+<!-- <u-button-group vertical> -->
   <u-button type="primary">上边的</u-button>
   <u-button type="primary">中间的</u-button>
   <u-button round type="primary">下边的</u-button>
-</u-button-group>
+<!-- </u-button-group> -->
 </template>
 
 ```html
-<u-button-group>
+<!-- <u-button-group>
   <u-button round type="primary">左边的</u-button>
   <u-button round type="primary">中间的</u-button>
   <u-button round type="primary">右边的</u-button>
@@ -272,7 +288,7 @@
   <u-button type="primary">上边的</u-button>
   <u-button type="primary">中间的</u-button>
   <u-button round type="primary">下边的</u-button>
-</u-button-group>
+</u-button-group> -->
 ```
 
 :::
@@ -369,7 +385,7 @@ import type {
 
 ## Contributors
 
-<a href="https://github.com/Tyh2001" target="_blank">
+<!-- <a href="https://github.com/Tyh2001" target="_blank">
   <u-avatar round src="https://avatars.githubusercontent.com/u/73180970?v=4" />
 </a>
 
@@ -379,7 +395,7 @@ import type {
 
 <a href="https://github.com/long-life233" target="_blank">
   <u-avatar round src="https://avatars.githubusercontent.com/u/77321887?v=4" />
-</a>
+</a> -->
 
 <style scoped>
 .u-button {

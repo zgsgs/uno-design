@@ -1,8 +1,9 @@
+import type { App } from 'vue'
 import { h } from 'vue'
 import Theme from 'vitepress/theme'
 import './style/vitepress.scss'
 import '@uno-design/theme'
-import UnoDesign from '../../../../packages/web-vue/index'
+import UnoDesign from '../../../packages/web-vue/index'
 import { vpDemo, vpSearch } from './components'
 
 export default {
@@ -18,7 +19,7 @@ export default {
       'nav-bar-content-before': () => h(vpSearch),
     })
   },
-  enhanceApp({ app }) {
+  enhanceApp({ app }: { app: App }) {
     app.use(UnoDesign)
     app.component('VpDemo', vpDemo)
   },
