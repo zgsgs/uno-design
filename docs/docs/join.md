@@ -6,11 +6,11 @@
 
 加微信邀请入 `Uno Design 社区讨论` 群
 
-<img width="200px" src="https://tianyuhao.cn/images/auto/weixin.png" />
+<img width="200px" src="https://xxxx/weixin.png" />
 
 ## 招募文章
 
-- [Vue3 开源组件库 Uno Design 成员招募](https://juejin.cn/post/7105020582516752392)
+- [Vue3 开源组件库 Uno Design 成员招募](https://xxxx)
 
 ## 社区组织
 

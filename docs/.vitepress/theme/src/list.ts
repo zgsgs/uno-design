@@ -5,7 +5,7 @@ export const bottomList = [
   {
     title: '社区',
     item: [
-      { text: '演练场', link: 'https://sfc.tianyuhao.cn' },
+      { text: '演练场', link: 'http://localhost:8888/' },
       { text: 'Github 组织', link: 'https://github.com/UnoDesign' },
       {
         text: 'Github 仓库',
@@ -18,10 +18,9 @@ export const bottomList = [
   {
     title: '关于我',
     item: [
-      { text: 'Github', link: 'https://github.com/Tyh2001' },
-      { text: '掘金', link: 'https://juejin.cn/user/2243446742456888/posts' },
-      { text: 'Tyh2001', link: 'https://tianyuhao.cn' },
-      { text: 'Blog', link: 'https://blog.tianyuhao.cn' },
+      { text: 'Github', link: 'https://github.com/zgsgs' },
+      { text: '掘金', link: 'https://juejin.cn/user/xxxx/posts' },
+      { text: 'Blog', link: 'https://blog.xxxx.cn' },
     ],
   },
   {

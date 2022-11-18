@@ -8,7 +8,7 @@ import { bottomList, contributors } from './src'
       <u-image
         class="logo"
         :draggable="false"
-        src="https://tianyuhao.cn/images/uno-design/UnoDesign.svg"
+        src="./images/logo.svg"
         alt="Uno Design logo"
       />
     </div>
@@ -20,7 +20,7 @@ import { bottomList, contributors } from './src'
       <img
         class="logo"
         draggable="false"
-        src="https://tianyuhao.cn/images/uno-design/UnoDesign.svg"
+        src="./images/logo.svg"
         alt="Uno Design logo"
       >
       <h1 class="title">

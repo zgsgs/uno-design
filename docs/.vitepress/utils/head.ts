@@ -8,7 +8,7 @@ export const head: HeadConfig[] = [
     'link',
     {
       rel: 'icon',
-      href: 'https://tianyuhao.cn/images/uno-design/UnoDesign.svg',
+      href: 'https://xxx/images/uno-design/UnoDesign.svg',
     },
   ],
   /**
@@ -68,7 +68,7 @@ export const head: HeadConfig[] = [
     'meta',
     {
       property: 'og:image',
-      content: 'https://tianyuhao.cn/images/uno-design/UnoDesign.svg',
+      content: 'https://xxx/images/uno-design/UnoDesign.svg',
     },
   ],
   /**

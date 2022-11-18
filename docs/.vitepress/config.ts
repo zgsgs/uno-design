@@ -18,7 +18,7 @@ export default defineConfig({
         link: 'https://github.com/zgsgs/uno-design',
       },
     ],
-    logo: 'https://tianyuhao.cn/images/uno-design/UnoDesign.svg',
+    logo: './theme/images/logo.svg',
   },
   markdown: {
     // 自定义 markdown 语法
