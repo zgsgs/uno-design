@@ -30,7 +30,7 @@
 感谢所有已经为 `Uno Design` [做出贡献的人](https://github.com/zgsgs/uno-design/graphs/contributors)！
 
 <a href="https://github.com/zgsgs/uno-design/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=UnoDesign/uno-design" />
+  <img src="https://contrib.rocks/image?repo=zgsgs/uno-design" />
 </a>
 
 ## 💬 执照

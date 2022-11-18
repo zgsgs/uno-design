@@ -1,4 +1,4 @@
-import { version } from '../../../../packages/web-vue/package.json'
+import { version } from '../../../packages/web-vue/package.json'
 
 /**
  * 顶部导航栏菜单
@@ -16,7 +16,7 @@ export const nav = [
   },
   {
     text: 'Playground',
-    link: 'https://sfc.tianyuhao.cn',
+    link: 'http://localhost:8888/',
   },
   {
     text: version,

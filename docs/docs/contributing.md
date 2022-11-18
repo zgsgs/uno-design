@@ -31,7 +31,7 @@
 
 ```shell
 # clone 项目
-clone git@github.com:UnoDesign/uno-design.git
+clone git@github.com:zgsgs/uno-design.git
 
 # 进入项目目录
 cd uno-design
@@ -131,5 +131,5 @@ git push
 感谢所有已经为 `Uno Design` [做出贡献的人](https://github.com/zgsgs/uno-design/graphs/contributors)！
 
 <a href="https://github.com/zgsgs/uno-design/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=UnoDesign/uno-design" />
+  <img src="https://contrib.rocks/image?repo=zgsgs/uno-design" />
 </a>

@@ -2,12 +2,11 @@
 {
   "extends": "@uno-design/shared/configs/tsconfig.base.json",
   "compilerOptions": {
-    "baseUrl": ".",
-    "target": "ESNext", // 为发出的 JavaScript 设置 JavaScript 语言版本，并包括兼容的库声明
+    "target": "esnext", // 为发出的 JavaScript 设置 JavaScript 语言版本，并包括兼容的库声明
     "useDefineForClassFields": true, // 发出符合 ECMAScript 标准的类字段
-    "module": "ESNext", // 指定生成的模块代码
+    "module": "esnext", // 指定生成的模块代码
     "moduleResolution": "Node", // 指定 TypeScript 如何从给定模块说明符中查找文件
-    "strict": true, // 启用所有严格类型检查选项
+    "strict": false, // 启用所有严格类型检查选项
     "sourceMap": true, // 为发出的 JavaScript 文件创建源映射文件
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -18,7 +17,7 @@
     ]
   },
   "include": [
-    "packages/**/*.ts",
-    "packages/**/*.d.ts"
+    ".vitepress/**/*.ts",
+    ".vitepress/**/*.d.ts"
   ]
 }
