@@ -92,7 +92,7 @@ import { bottomList, contributors } from './src'
 
       <p class="code">
         <u-link target="_blank" href="https://beian.miit.gov.cn">
-          UnoDesign | 浙ICP备2021024540号-2
+          UnoDesign | 豫ICP备xxx号-2
         </u-link>
       </p>
     </div>

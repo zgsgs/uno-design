@@ -1,7 +1,9 @@
 <script setup>
-// dd
+import { UButton } from '@uno-design'
 </script>
 
 <template>
-  <h1>Button</h1>
+  <UButton type="success">
+    成功按钮
+  </UButton>
 </template>

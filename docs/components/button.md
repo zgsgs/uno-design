@@ -5,11 +5,9 @@
 - [源代码](https://github.com/zgsgs/uno-design/tree/master/packages/uno-design/button)
 - [文档编辑](https://github.com/zgsgs/uno-design/blob/master/docs/docs/components/button.md)
 
-## 基本使用
+## 测试组件Demo演示方案
 
-`type` 属性可以配置不同的按钮类型，展示不同的颜色状态
-
-`simple` 属性可以配置简约的按钮，样式依然由 `type` 控制
+### VitePress 原生支持
 
 <script setup>
   // 这个 demo1 重复了多次，复制修改的时候容易漏掉
@@ -27,37 +25,113 @@
   </details>
 </DemoContainer>
 
-::: demo
+### vitepress-demo-edit 插件
 
-<template #source>
-<u-button type="default">默认按钮</u-button>
-<u-button type="primary">主要按钮</u-button>
-<u-button type="success">成功按钮</u-button>
-<u-button type="danger">危险按钮</u-button>
-<u-button type="warning">警告按钮</u-button>
+:::demo
 
-<br />
+```vue
+<script setup>
+import { ref } from 'vue'
+const count = ref(0)
+const text = ref('')
+</script>
 
-<u-button simple type="default">默认按钮</u-button>
-<u-button simple type="primary">主要按钮</u-button>
-<u-button simple type="success">成功按钮</u-button>
-<u-button simple type="danger">危险按钮</u-button>
-<u-button simple type="warning">警告按钮</u-button>
-
+<template>
+  <button class="demo-btn" @click="count--">
+    -
+  </button>
+  <b class="demo-count" :class="{ red: count >= 3 }">{{ count }}</b>
+  <button class="demo-btn" @click="count++">
+    +
+  </button>
 </template>
 
-```html
-<u-button type="default">默认按钮</u-button>
-<u-button type="primary">主要按钮</u-button>
-<u-button type="success">成功按钮</u-button>
-<u-button type="danger">危险按钮</u-button>
-<u-button type="warning">警告按钮</u-button>
+<style>
+/* 默认 scoped */
+.demo-btn {
+  padding: 0 10px;
+  border: 1px solid #ccc;
+}
+.demo-count {
+  display: inline-block;
+  text-align: center;
+  margin: 0 10px;
+  min-width: 30px;
+}
+/* global */
 
-<u-button simple type="default">默认按钮</u-button>
-<u-button simple type="primary">主要按钮</u-button>
-<u-button simple type="success">成功按钮</u-button>
-<u-button simple type="danger">危险按钮</u-button>
-<u-button simple type="warning">警告按钮</u-button>
+:global(.red) {
+  color: red;
+}
+</style>
+```
+```vue
+<script setup>
+import { ref } from 'vue'
+const count = ref(0)
+const text = ref('')
+</script>
+
+<template>
+  <div>{{ text }}</div>
+</template>
+
+<style>
+.btn{}
+</style>
+```
+
+:::
+
+## 基本使用
+
+`type` 属性可以配置不同的按钮类型，展示不同的颜色状态
+
+`simple` 属性可以配置简约的按钮，样式依然由 `type` 控制
+
+::: demo
+
+```vue
+<script setup>
+import { ref } from 'vue'
+const text = ref('')
+</script>
+
+<template>
+  <u-button type="default">
+    默认按钮
+  </u-button>
+  <u-button type="primary">
+    主要按钮
+  </u-button>
+  <u-button type="success">
+    成功按钮
+  </u-button>
+  <u-button type="danger">
+    危险按钮
+  </u-button>
+  <u-button type="warning">
+    警告按钮
+  </u-button>
+
+  <br>
+
+  <u-button simple type="default">
+    默认按钮
+  </u-button>
+  <u-button simple type="primary">
+    主要按钮
+  </u-button>
+  <u-button simple type="success">
+    成功按钮
+  </u-button>
+  <u-button simple type="danger">
+    危险按钮
+  </u-button>
+  <u-button simple type="warning">
+    警告按钮
+  </u-button>
+</template>
 ```
 
 :::
@@ -68,34 +142,47 @@
 
 ::: demo
 
-<template #source>
-<u-button round type="default">默认按钮</u-button>
-<u-button round type="primary">主要按钮</u-button>
-<u-button round type="success">成功按钮</u-button>
-<u-button round type="danger">危险按钮</u-button>
-<u-button round type="warning">警告按钮</u-button>
+```vue
+<script setup>
+import { ref } from 'vue'
+const text = ref('')
+</script>
 
-<br />
+<template>
+  <u-button round type="default">
+    默认按钮
+  </u-button>
+  <u-button round type="primary">
+    主要按钮
+  </u-button>
+  <u-button round type="success">
+    成功按钮
+  </u-button>
+  <u-button round type="danger">
+    危险按钮
+  </u-button>
+  <u-button round type="warning">
+    警告按钮
+  </u-button>
 
-<u-button round simple type="default">默认按钮</u-button>
-<u-button round simple type="primary">主要按钮</u-button>
-<u-button round simple type="success">成功按钮</u-button>
-<u-button round simple type="danger">危险按钮</u-button>
-<u-button round simple type="warning">警告按钮</u-button>
+  <br>
+
+  <u-button round simple type="default">
+    默认按钮
+  </u-button>
+  <u-button round simple type="primary">
+    主要按钮
+  </u-button>
+  <u-button round simple type="success">
+    成功按钮
+  </u-button>
+  <u-button round simple type="danger">
+    危险按钮
+  </u-button>
+  <u-button round simple type="warning">
+    警告按钮
+  </u-button>
 </template>
-
-```html
-<u-button round type="default">默认按钮</u-button>
-<u-button round type="primary">主要按钮</u-button>
-<u-button round type="success">成功按钮</u-button>
-<u-button round type="danger">危险按钮</u-button>
-<u-button round type="warning">警告按钮</u-button>
-
-<u-button round simple type="default">默认按钮</u-button>
-<u-button round simple type="primary">主要按钮</u-button>
-<u-button round simple type="success">成功按钮</u-button>
-<u-button round simple type="danger">危险按钮</u-button>
-<u-button round simple type="warning">警告按钮</u-button>
 ```
 
 :::
@@ -108,34 +195,47 @@
 
 ::: demo
 
-<template #source>
-<u-button disabled type="default">默认按钮</u-button>
-<u-button disabled type="primary">主要按钮</u-button>
-<u-button disabled type="success">成功按钮</u-button>
-<u-button disabled type="danger">危险按钮</u-button>
-<u-button disabled type="warning">警告按钮</u-button>
+```vue
+<script setup>
+import { ref } from 'vue'
+const text = ref('')
+</script>
 
-<br />
+<template>
+  <u-button disabled type="default">
+    默认按钮
+  </u-button>
+  <u-button disabled type="primary">
+    主要按钮
+  </u-button>
+  <u-button disabled type="success">
+    成功按钮
+  </u-button>
+  <u-button disabled type="danger">
+    危险按钮
+  </u-button>
+  <u-button disabled type="warning">
+    警告按钮
+  </u-button>
 
-<u-button loading type="default">默认按钮</u-button>
-<u-button loading type="primary">主要按钮</u-button>
-<u-button loading type="success">成功按钮</u-button>
-<u-button loading type="danger">危险按钮</u-button>
-<u-button loading type="warning">警告按钮</u-button>
+  <br>
+
+  <u-button loading type="default">
+    默认按钮
+  </u-button>
+  <u-button loading type="primary">
+    主要按钮
+  </u-button>
+  <u-button loading type="success">
+    成功按钮
+  </u-button>
+  <u-button loading type="danger">
+    危险按钮
+  </u-button>
+  <u-button loading type="warning">
+    警告按钮
+  </u-button>
 </template>
-
-```html
-<u-button disabled type="default">默认按钮</u-button>
-<u-button disabled type="primary">主要按钮</u-button>
-<u-button disabled type="success">成功按钮</u-button>
-<u-button disabled type="danger">危险按钮</u-button>
-<u-button disabled type="warning">警告按钮</u-button>
-
-<u-button loading type="default">默认按钮</u-button>
-<u-button loading type="primary">主要按钮</u-button>
-<u-button loading type="success">成功按钮</u-button>
-<u-button loading type="danger">危险按钮</u-button>
-<u-button loading type="warning">警告按钮</u-button>
 ```
 
 :::
@@ -146,18 +246,26 @@
 
 ::: demo
 
-<template #source>
-<u-button size="large" type="primary">大型按钮</u-button>
-<u-button size="middle" type="success">中型按钮</u-button>
-<u-button size="small" type="danger">小型按钮</u-button>
-<u-button size="mini" type="warning">迷你按钮</u-button>
-</template>
+```vue
+<script setup>
+import { ref } from 'vue'
+const text = ref('')
+</script>
 
-```html
-<u-button size="large" type="primary">大型按钮</u-button>
-<u-button size="middle" type="success">中型按钮</u-button>
-<u-button size="small" type="danger">小型按钮</u-button>
-<u-button size="mini" type="warning">迷你按钮</u-button>
+<template>
+  <u-button size="large" type="primary">
+    大型按钮
+  </u-button>
+  <u-button size="middle" type="success">
+    中型按钮
+  </u-button>
+  <u-button size="small" type="danger">
+    小型按钮
+  </u-button>
+  <u-button size="mini" type="warning">
+    迷你按钮
+  </u-button>
+</template>
 ```
 
 :::
@@ -168,34 +276,47 @@
 
 ::: demo
 
-<template #source>
-<u-button text type="default">默认按钮</u-button>
-<u-button text type="primary">主要按钮</u-button>
-<u-button text type="success">成功按钮</u-button>
-<u-button text type="danger">危险按钮</u-button>
-<u-button text type="warning">警告按钮</u-button>
+```vue
+<script setup>
+import { ref } from 'vue'
+const text = ref('')
+</script>
 
-<br />
+<template>
+  <u-button text type="default">
+    默认按钮
+  </u-button>
+  <u-button text type="primary">
+    主要按钮
+  </u-button>
+  <u-button text type="success">
+    成功按钮
+  </u-button>
+  <u-button text type="danger">
+    危险按钮
+  </u-button>
+  <u-button text type="warning">
+    警告按钮
+  </u-button>
 
-<u-button text round type="default">默认按钮</u-button>
-<u-button text round type="primary">主要按钮</u-button>
-<u-button text round type="success">成功按钮</u-button>
-<u-button text round type="danger">危险按钮</u-button>
-<u-button text round type="warning">警告按钮</u-button>
+  <br>
+
+  <u-button text round type="default">
+    默认按钮
+  </u-button>
+  <u-button text round type="primary">
+    主要按钮
+  </u-button>
+  <u-button text round type="success">
+    成功按钮
+  </u-button>
+  <u-button text round type="danger">
+    危险按钮
+  </u-button>
+  <u-button text round type="warning">
+    警告按钮
+  </u-button>
 </template>
-
-```html
-<u-button text type="default">默认按钮</u-button>
-<u-button text type="primary">主要按钮</u-button>
-<u-button text type="success">成功按钮</u-button>
-<u-button text type="danger">危险按钮</u-button>
-<u-button text type="warning">警告按钮</u-button>
-
-<u-button text round type="default">默认按钮</u-button>
-<u-button text round type="primary">主要按钮</u-button>
-<u-button text round type="success">成功按钮</u-button>
-<u-button text round type="danger">危险按钮</u-button>
-<u-button text round type="warning">警告按钮</u-button>
 ```
 
 :::
@@ -208,20 +329,29 @@
 
 ::: demo
 
-<template #source>
-<u-button shadow="0 2px 7px 0 #f0f0f0" type="default">默认按钮</u-button>
-<u-button shadow="0 2px 7px 0 #2d5af1" type="primary">主要按钮</u-button>
-<u-button shadow="0 2px 7px 0 #52b35e" type="success">成功按钮</u-button>
-<u-button shadow="0 2px 7px 0 #ff0200" type="danger">危险按钮</u-button>
-<u-button shadow="0 2px 7px 0 #fcc202" type="warning">警告按钮</u-button>
-</template>
+```vue
+<script setup>
+import { ref } from 'vue'
+const text = ref('')
+</script>
 
-```html
-<u-button shadow="0 2px 7px 0 #f0f0f0" type="default">默认按钮</u-button>
-<u-button shadow="0 2px 7px 0 #2d5af1" type="primary">主要按钮</u-button>
-<u-button shadow="0 2px 7px 0 #52b35e" type="success">成功按钮</u-button>
-<u-button shadow="0 2px 7px 0 #ff0200" type="danger">危险按钮</u-button>
-<u-button shadow="0 2px 7px 0 #fcc202" type="warning">警告按钮</u-button>
+<template>
+  <u-button shadow="0 2px 7px 0 #f0f0f0" type="default">
+    默认按钮
+  </u-button>
+  <u-button shadow="0 2px 7px 0 #2d5af1" type="primary">
+    主要按钮
+  </u-button>
+  <u-button shadow="0 2px 7px 0 #52b35e" type="success">
+    成功按钮
+  </u-button>
+  <u-button shadow="0 2px 7px 0 #ff0200" type="danger">
+    危险按钮
+  </u-button>
+  <u-button shadow="0 2px 7px 0 #fcc202" type="warning">
+    警告按钮
+  </u-button>
+</template>
 ```
 
 :::
@@ -232,22 +362,29 @@
 
 ::: demo
 
-<template #source>
-<u-button type="primary">主要按钮</u-button>
-<u-button type="success" ripples>涟漪效果</u-button>
-<u-button type="warning" ripples>点我试试</u-button>
-<u-button type="danger" ripples simple>看看我</u-button>
-<u-button type="success" text ripples ripples-color="green">自定义涟漪颜色</u-button>
-</template>
+```vue
+<script setup>
+import { ref } from 'vue'
+const text = ref('')
+</script>
 
-```html
-<u-button type="primary">主要按钮</u-button>
-<u-button type="success" ripples>涟漪效果</u-button>
-<u-button type="warning" ripples>点我试试</u-button>
-<u-button type="danger" ripples simple>看看我</u-button>
-<u-button type="success" text ripples ripples-color="green">
-  自定义涟漪颜色
-</u-button>
+<template>
+  <u-button type="primary">
+    主要按钮
+  </u-button>
+  <u-button type="success" ripples>
+    涟漪效果
+  </u-button>
+  <u-button type="warning" ripples>
+    点我试试
+  </u-button>
+  <u-button type="danger" ripples simple>
+    看看我
+  </u-button>
+  <u-button type="success" text ripples ripples-color="green">
+    自定义涟漪颜色
+  </u-button>
+</template>
 ```
 
 :::
@@ -260,35 +397,41 @@
 
 ::: demo
 
-<template #source>
-<!-- <u-button-group> -->
-<u-button round type="primary">左边的</u-button>
-<u-button round type="primary">中间的</u-button>
-<u-button round type="primary">右边的</u-button>
-<!-- </u-button-group> -->
 
-<br />
-<br />
+```vue
+<script setup>
+import { ref } from 'vue'
+const text = ref('')
+</script>
 
-<!-- <u-button-group vertical> -->
-  <u-button type="primary">上边的</u-button>
-  <u-button type="primary">中间的</u-button>
-  <u-button round type="primary">下边的</u-button>
-<!-- </u-button-group> -->
+<template>
+  <u-button-group>
+    <u-button round type="primary">
+      左边的
+    </u-button>
+    <u-button round type="primary">
+      中间的
+    </u-button>
+    <u-button round type="primary">
+      右边的
+    </u-button>
+  </u-button-group>
+
+  <br>
+  <br>
+
+  <u-button-group vertical>
+    <u-button type="primary">
+      上边的
+    </u-button>
+    <u-button type="primary">
+      中间的
+    </u-button>
+    <u-button round type="primary">
+      下边的
+    </u-button>
+  </u-button-group>
 </template>
-
-```html
-<!-- <u-button-group>
-  <u-button round type="primary">左边的</u-button>
-  <u-button round type="primary">中间的</u-button>
-  <u-button round type="primary">右边的</u-button>
-</u-button-group>
-
-<u-button-group vertical>
-  <u-button type="primary">上边的</u-button>
-  <u-button type="primary">中间的</u-button>
-  <u-button round type="primary">下边的</u-button>
-</u-button-group> -->
 ```
 
 :::
@@ -301,14 +444,20 @@
 
 ::: demo
 
-<template #source>
-<u-button font-color="#fff" color="#ff0de5" round>自定义颜色</u-button>
-<u-button font-color="#fff" color="#22c1c3" loading>loading</u-button>
-</template>
+```vue
+<script setup>
+import { ref } from 'vue'
+const text = ref('')
+</script>
 
-```html
-<u-button font-color="#fff" color="#ff0de5" round>自定义颜色</u-button>
-<u-button font-color="#fff" color="#22c1c3" loading>loading</u-button>
+<template>
+  <u-button font-color="#fff" color="#ff0de5" round>
+    自定义颜色
+  </u-button>
+  <u-button font-color="#fff" color="#22c1c3" loading>
+    loading
+  </u-button>
+</template>
 ```
 
 :::

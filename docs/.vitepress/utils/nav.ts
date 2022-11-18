@@ -16,7 +16,7 @@ export const nav = [
   },
   {
     text: 'Playground',
-    link: 'https://sfc.tianyuhao.cn',
+    link: 'http://localhost:8888/',
   },
   {
     text: version,

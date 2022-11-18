@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
+import markDownPlugin from 'vitepress-demo-editor/markdownPlugin'
 import { description, head, nav, sidebar } from './utils'
-import { mdPlugin } from './config/plugins'
+// import { mdPlugin } from './config/plugins'
 
 export default defineConfig({
   title: 'Uno Design',
@@ -21,6 +22,9 @@ export default defineConfig({
   },
   markdown: {
     // 自定义 markdown 语法
-    config: md => mdPlugin(md),
+    config: (md) => {
+      md.use(markDownPlugin, {})
+      // mdPlugin(md)
+    },
   },
 })

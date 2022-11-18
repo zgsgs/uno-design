@@ -11,4 +11,7 @@ export default defineConfig({
     __COMMIT__: JSON.stringify(commit),
     __VUE_PROD_DEVTOOLS__: JSON.stringify(true),
   },
+  server: {
+    port: 8888, // 端口号
+  },
 })

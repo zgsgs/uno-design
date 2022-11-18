@@ -3,8 +3,10 @@ import { h } from 'vue'
 import Theme from 'vitepress/theme'
 import './style/vitepress.scss'
 import '@uno-design/theme'
+import { vuePlugin } from 'vitepress-demo-editor'
 import UnoDesign from '../../../packages/web-vue/index'
 import { vpDemo, vpSearch } from './components'
+import 'vitepress-demo-editor/dist/style.css'
 
 export default {
   ...Theme,
@@ -20,7 +22,13 @@ export default {
     })
   },
   enhanceApp({ app }: { app: App }) {
-    app.use(UnoDesign)
     app.component('VpDemo', vpDemo)
+    app.use(UnoDesign)
+    app.use(vuePlugin, {
+      defaultDirection: 'column', // 默认显示方向
+      ms: 30, // 编辑器防抖时间
+      handleError() {}, // 错误信息
+      onMonacoCreated() {}, // monaco 创建成功时触发
+    })
   },
 }
