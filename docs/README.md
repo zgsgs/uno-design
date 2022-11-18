@@ -6,19 +6,19 @@
 
 ## 常见的组件库
 
+* [TDesign - 开源的企业级设计体系 (tencent.com](https://tdesign.tencent.com/)
 * [Semi Design](https://semi.design/zh-CN/)
-* [Fluent UI - Get started - Fluent UI (microsoft.com)](https://developer.microsoft.com/en-us/fluentui#/)
+* [daisyUI — Tailwind CSS组件](https://daisyui.com/)
+* [Free Open Source Tailwind CSS Components | HyperUI](https://www.hyperui.dev/)
+* [Fighting Design | Fighting Design (tianyuhao.cn)](https://fighting.tianyuhao.cn/)
+* [Arco Design - 企业级产品的完整设计和开发解决方案](https://arco.design/)
+* [MUI: The React component library you always wanted](https://mui.com/zh/)
+* [Vant 3 - 轻量、可靠的移动端组件库 (vant-ui.github.io)](https://vant-ui.github.io/vant/#/zh-CN)
+* [uView 2.0 - 全面兼容nvue的uni-app生态框架 - uni-app UI框架 (uviewui.com)](https://www.uviewui.com/)
 * [Naive UI: 一个 Vue 3 组件库](https://www.naiveui.com/zh-CN/os-theme)
 * [Element - 网站快速成型工具](https://element.eleme.io/#/zh-CN)
-* [Arco Design - 企业级产品的完整设计和开发解决方案](https://arco.design/)
-* [Vant 3 - 轻量、可靠的移动端组件库 (vant-ui.github.io)](https://vant-ui.github.io/vant/#/zh-CN)
-* [MUI: The React component library you always wanted](https://mui.com/zh/)
-* [Fluent UI - Get started - Fluent UI (microsoft.com)](https://developer.microsoft.com/en-us/fluentui#/)
 * [Vuetify — A Material Design Framework for Vue.js (vuetifyjs.com)](https://vuetifyjs.com/zh-Hans/)
-* [Fighting Design | Fighting Design (tianyuhao.cn)](https://fighting.tianyuhao.cn/)
-* [Free Open Source Tailwind CSS Components | HyperUI](https://www.hyperui.dev/)
-* [uView 2.0 - 全面兼容nvue的uni-app生态框架 - uni-app UI框架 (uviewui.com)](https://www.uviewui.com/)
-* [TDesign - 开源的企业级设计体系 (tencent.com)](https://tdesign.tencent.com/)
+* [Fluent UI - Get started - Fluent UI (microsoft.com)](https://developer.microsoft.com/en-us/fluentui#/)
 * [Zan Design System - 有赞设计语言系统 - 服务于 SaaS 产品的产品设计体系 (youzan.com)](https://design.youzan.com/)
 * [Taro UI | O2Team (jd.com)](https://taro-ui.jd.com/#/)
 
@@ -50,7 +50,7 @@
 
 ![1668781005369](.assets/README/1668781005369.png)
 
-另外 **HyperUI** 是一个比较另类的组件库，它几乎只有样式上的表现，文档中切换不同屏幕尺寸的功能让人耳目一新。
+另外 **HyperUI** 和 **daisyUI** 是比较另类的一类组件库，它们更注重组件样式上的表现，使用的是原子类（TailWindCSS、WindiCSS、Unocss）来实现样式，文档中切换不同主题和屏幕尺寸的功能让人耳目一新。尤其是主题的应用，正符合我**逻辑与样式分离**的设计思想。
 
 ## 附件
 
@@ -60,7 +60,6 @@
 - 可交互预览 [vuetify](https://vuetifyjs.com/zh-Hans/components/buttons/#section-57577ea7630994ae)
 
   ![1668780071462](.assets/README/1668780071462.png)
-
 - 可编辑预览 [semi design](https://semi.design/zh-CN/input/button)
 
 ![1668780525803](.assets/README/1668780525803.png)
