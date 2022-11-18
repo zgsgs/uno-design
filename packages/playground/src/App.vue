@@ -28,10 +28,10 @@ const store = new ReplStore({
   serializedState: hash,
   defaultVueRuntimeURL: import.meta.env.PROD
     ? `${location.origin}/vue.runtime.esm-browser.js`
-    : `${location.origin}/src/vue-dev-proxy`,
+    : `${location.origin}/src/utils/vue-dev-proxy`,
   defaultVueServerRendererURL: import.meta.env.PROD
     ? `${location.origin}/server-renderer.esm-browser.js`
-    : `${location.origin}/src/vue-server-renderer-dev-proxy`,
+    : `${location.origin}/src/utils/vue-server-renderer-dev-proxy`,
 })
 
 // enable experimental features

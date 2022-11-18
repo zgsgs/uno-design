@@ -10,9 +10,9 @@ export const unoPlugin = 'uno.ts'
 export const welcomeCode = `
 <script setup lang='ts'>
   import { ref } from 'vue'
-  import { install } from './${unoPlugin}'
+  // import { install } from './${unoPlugin}'
 
-  install()
+  // install()
 
   const value = ref(true)
   const msg = ref('Hello World！')
@@ -27,7 +27,7 @@ export const welcomeCode = `
 `
 
 export const unoPluginCode = `
-import UnoDesign from '@uno-design/web-vue'
+// import UnoDesign from '@uno-design/web-vue'
 import { getCurrentInstance } from 'vue'
 import type { ComponentInternalInstance } from 'vue'
 
@@ -35,7 +35,7 @@ await appendStyle()
 
 export function install () {
   const instance = getCurrentInstance() as ComponentInternalInstance
-  instance.appContext.app.use(UnoDesign)
+  // instance.appContext.app.use(UnoDesign)
 }
 
 function appendStyle () {

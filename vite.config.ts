@@ -83,9 +83,9 @@ export default (): UserConfigExport => {
             entryFileNames: 'index.js', // 输出后的文件名 https://rollupjs.org/guide/en/#outputentryfilenames
             chunkFileNames: '[name].js', // 输出的 chunk文件名 https://rollupjs.org/guide/en/#outputchunkfilenames
             assetFileNames: '[name].[ext]', // 输出资产文件名 https://rollupjs.org/guide/en/#outputassetfilenames
-            namespaceToStringTag: true, // https://rollupjs.org/guide/en/#outputnamespacetostringtag
-            inlineDynamicImports: false, // https://rollupjs.org/guide/en/#outputinlinedynamicimports
-            manualChunks: undefined,
+            namespaceToStringTag: true, // 打印报名会输出[object Module] https://rollupjs.org/guide/en/#outputnamespacetostringtag
+            inlineDynamicImports: false, // 内联动态引入 https://rollupjs.org/guide/en/#outputinlinedynamicimports
+            manualChunks: undefined, // 创建自定义公共模块
             preserveModules: true, // https://rollupjs.org/guide/en/#outputpreservemodules
           },
           {
