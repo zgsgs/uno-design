@@ -3,7 +3,7 @@
 功能很强大的按钮
 
 - [源代码](https://github.com/zgsgs/uno-design/tree/master/packages/uno-design/button)
-- [文档编辑](https://github.com/zgsgs/uno-design/blob/master/docs/docs/components/button.md)
+- [文档编辑](https://github.com/zgsgs/uno-design/blob/master/docs/components/button.md)
 
 ## 测试组件Demo演示方案
 
