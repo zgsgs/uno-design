@@ -1,3 +1,4 @@
+import path from 'path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { execaSync } from 'execa'
@@ -10,5 +11,12 @@ export default defineConfig({
   define: {
     __COMMIT__: JSON.stringify(commit),
     __VUE_PROD_DEVTOOLS__: JSON.stringify(true),
+  },
+  build: {
+    minify: true,
+    chunkSizeWarningLimit: 2,
+    reportCompressedSize: true,
+    emptyOutDir: false,
+    outDir: path.resolve(__dirname, '../../dist-playground'),
   },
 })
