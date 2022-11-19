@@ -15,9 +15,7 @@
     "vitepress": "1.0.0-alpha.28"
   },
   "devDependencies": {
-    "@types/markdown-it-container": "^2.0.5",
     "markdown-it": "^13.0.1",
-    "markdown-it-container": "^3.0.0",
     "vitepress-demo-editor": "^3.0.8"
   }
 }
