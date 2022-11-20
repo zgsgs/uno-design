@@ -1,5 +1,5 @@
 import installer from './defaults'
 
-export * from './export'
+export * from './components'
 
 export default installer

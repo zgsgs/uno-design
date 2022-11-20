@@ -1,5 +1,5 @@
 import type { App } from 'vue'
-import * as components from './export'
+import * as components from './components'
 import { version } from './package.json'
 import type { AppInstallInterface } from './_types'
 

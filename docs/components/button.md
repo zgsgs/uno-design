@@ -13,7 +13,6 @@
   // 这个 demo1 重复了多次，复制修改的时候容易漏掉
   import UButton from '../../packages/web-vue/button'
 </script>
-<DemoContainer title="基本使用">
   <ClientOnly>
   	<UButton type="success">成功按钮</UButton>
   </ClientOnly>
@@ -23,7 +22,6 @@
 
 <<< components/_demos/button.vue
   </details>
-</DemoContainer>
 
 ### vitepress-demo-edit 插件
 
@@ -98,39 +96,42 @@ const text = ref('')
 </script>
 
 <template>
-  <u-button type="default">
-    默认按钮
-  </u-button>
-  <u-button type="primary">
-    主要按钮
-  </u-button>
-  <u-button type="success">
-    成功按钮
-  </u-button>
-  <u-button type="danger">
-    危险按钮
-  </u-button>
-  <u-button type="warning">
-    警告按钮
-  </u-button>
-
-  <br>
-
-  <u-button simple type="default">
-    默认按钮
-  </u-button>
-  <u-button simple type="primary">
-    主要按钮
-  </u-button>
-  <u-button simple type="success">
-    成功按钮
-  </u-button>
-  <u-button simple type="danger">
-    危险按钮
-  </u-button>
-  <u-button simple type="warning">
-    警告按钮
-  </u-button>
+  <u-space spacing="middle" :vertical="true">
+    <u-space spacing="middle">
+      <u-button type="default">
+        默认按钮
+      </u-button>
+      <u-button type="primary">
+        主要按钮
+      </u-button>
+      <u-button type="success">
+        成功按钮
+      </u-button>
+      <u-button type="danger">
+        危险按钮
+      </u-button>
+      <u-button type="warning">
+        警告按钮
+      </u-button>
+    </u-space>
+    <u-space spacing="middle">
+      <u-button simple type="default">
+        默认按钮
+      </u-button>
+      <u-button simple type="primary">
+        主要按钮
+      </u-button>
+      <u-button simple type="success">
+        成功按钮
+      </u-button>
+      <u-button simple type="danger">
+        危险按钮
+      </u-button>
+      <u-button simple type="warning">
+        警告按钮
+      </u-button>
+    </u-space>
+  </u-space>
 </template>
 ```
 
@@ -149,39 +150,42 @@ const text = ref('')
 </script>
 
 <template>
-  <u-button round type="default">
-    默认按钮
-  </u-button>
-  <u-button round type="primary">
-    主要按钮
-  </u-button>
-  <u-button round type="success">
-    成功按钮
-  </u-button>
-  <u-button round type="danger">
-    危险按钮
-  </u-button>
-  <u-button round type="warning">
-    警告按钮
-  </u-button>
-
-  <br>
-
-  <u-button round simple type="default">
-    默认按钮
-  </u-button>
-  <u-button round simple type="primary">
-    主要按钮
-  </u-button>
-  <u-button round simple type="success">
-    成功按钮
-  </u-button>
-  <u-button round simple type="danger">
-    危险按钮
-  </u-button>
-  <u-button round simple type="warning">
-    警告按钮
-  </u-button>
+  <u-space spacing="middle" :vertical="true">
+    <u-space spacing="middle">
+      <u-button round type="default">
+        默认按钮
+      </u-button>
+      <u-button round type="primary">
+        主要按钮
+      </u-button>
+      <u-button round type="success">
+        成功按钮
+      </u-button>
+      <u-button round type="danger">
+        危险按钮
+      </u-button>
+      <u-button round type="warning">
+        警告按钮
+      </u-button>
+    </u-space>
+    <u-span>
+      <u-button round simple type="default">
+        默认按钮
+      </u-button>
+      <u-button round simple type="primary">
+        主要按钮
+      </u-button>
+      <u-button round simple type="success">
+        成功按钮
+      </u-button>
+      <u-button round simple type="danger">
+        危险按钮
+      </u-button>
+      <u-button round simple type="warning">
+        警告按钮
+      </u-button>
+    </u-span>
+  </u-space>
 </template>
 ```
 
@@ -202,39 +206,42 @@ const text = ref('')
 </script>
 
 <template>
-  <u-button disabled type="default">
-    默认按钮
-  </u-button>
-  <u-button disabled type="primary">
-    主要按钮
-  </u-button>
-  <u-button disabled type="success">
-    成功按钮
-  </u-button>
-  <u-button disabled type="danger">
-    危险按钮
-  </u-button>
-  <u-button disabled type="warning">
-    警告按钮
-  </u-button>
-
-  <br>
-
-  <u-button loading type="default">
-    默认按钮
-  </u-button>
-  <u-button loading type="primary">
-    主要按钮
-  </u-button>
-  <u-button loading type="success">
-    成功按钮
-  </u-button>
-  <u-button loading type="danger">
-    危险按钮
-  </u-button>
-  <u-button loading type="warning">
-    警告按钮
-  </u-button>
+  <u-space spacing="middle" :vertical="true">
+    <u-space spacing="middle">
+      <u-button disabled type="default">
+        默认按钮
+      </u-button>
+      <u-button disabled type="primary">
+        主要按钮
+      </u-button>
+      <u-button disabled type="success">
+        成功按钮
+      </u-button>
+      <u-button disabled type="danger">
+        危险按钮
+      </u-button>
+      <u-button disabled type="warning">
+        警告按钮
+      </u-button>
+    </u-space>
+    <u-space spacing="middle">
+      <u-button loading type="default">
+        默认按钮
+      </u-button>
+      <u-button loading type="primary">
+        主要按钮
+      </u-button>
+      <u-button loading type="success">
+        成功按钮
+      </u-button>
+      <u-button loading type="danger">
+        危险按钮
+      </u-button>
+      <u-button loading type="warning">
+        警告按钮
+      </u-button>
+    </u-space>
+  </u-space>
 </template>
 ```
 
@@ -253,18 +260,20 @@ const text = ref('')
 </script>
 
 <template>
-  <u-button size="large" type="primary">
-    大型按钮
-  </u-button>
-  <u-button size="middle" type="success">
-    中型按钮
-  </u-button>
-  <u-button size="small" type="danger">
-    小型按钮
-  </u-button>
-  <u-button size="mini" type="warning">
-    迷你按钮
-  </u-button>
+  <u-space spacing="middle">
+    <u-button size="large" type="primary">
+      大型按钮
+    </u-button>
+    <u-button size="middle" type="success">
+      中型按钮
+    </u-button>
+    <u-button size="small" type="danger">
+      小型按钮
+    </u-button>
+    <u-button size="mini" type="warning">
+      迷你按钮
+    </u-button>
+  </u-space>
 </template>
 ```
 
@@ -283,39 +292,42 @@ const text = ref('')
 </script>
 
 <template>
-  <u-button text type="default">
-    默认按钮
-  </u-button>
-  <u-button text type="primary">
-    主要按钮
-  </u-button>
-  <u-button text type="success">
-    成功按钮
-  </u-button>
-  <u-button text type="danger">
-    危险按钮
-  </u-button>
-  <u-button text type="warning">
-    警告按钮
-  </u-button>
-
-  <br>
-
-  <u-button text round type="default">
-    默认按钮
-  </u-button>
-  <u-button text round type="primary">
-    主要按钮
-  </u-button>
-  <u-button text round type="success">
-    成功按钮
-  </u-button>
-  <u-button text round type="danger">
-    危险按钮
-  </u-button>
-  <u-button text round type="warning">
-    警告按钮
-  </u-button>
+  <u-space spacing="middle" :vertical="true">
+    <u-space spacing="middle">
+      <u-button text type="default">
+        默认按钮
+      </u-button>
+      <u-button text type="primary">
+        主要按钮
+      </u-button>
+      <u-button text type="success">
+        成功按钮
+      </u-button>
+      <u-button text type="danger">
+        危险按钮
+      </u-button>
+      <u-button text type="warning">
+        警告按钮
+      </u-button>
+    </u-space>
+    <u-space spacing="middle">
+      <u-button text round type="default">
+        默认按钮
+      </u-button>
+      <u-button text round type="primary">
+        主要按钮
+      </u-button>
+      <u-button text round type="success">
+        成功按钮
+      </u-button>
+      <u-button text round type="danger">
+        危险按钮
+      </u-button>
+      <u-button text round type="warning">
+        警告按钮
+      </u-button>
+    </u-space>
+  </u-space>
 </template>
 ```
 
@@ -336,21 +348,23 @@ const text = ref('')
 </script>
 
 <template>
-  <u-button shadow="0 2px 7px 0 #f0f0f0" type="default">
-    默认按钮
-  </u-button>
-  <u-button shadow="0 2px 7px 0 #2d5af1" type="primary">
-    主要按钮
-  </u-button>
-  <u-button shadow="0 2px 7px 0 #52b35e" type="success">
-    成功按钮
-  </u-button>
-  <u-button shadow="0 2px 7px 0 #ff0200" type="danger">
-    危险按钮
-  </u-button>
-  <u-button shadow="0 2px 7px 0 #fcc202" type="warning">
-    警告按钮
-  </u-button>
+  <u-space spacing="middle">
+    <u-button shadow="0 2px 7px 0 #f0f0f0" type="default">
+      默认按钮
+    </u-button>
+    <u-button shadow="0 2px 7px 0 #2d5af1" type="primary">
+      主要按钮
+    </u-button>
+    <u-button shadow="0 2px 7px 0 #52b35e" type="success">
+      成功按钮
+    </u-button>
+    <u-button shadow="0 2px 7px 0 #ff0200" type="danger">
+      危险按钮
+    </u-button>
+    <u-button shadow="0 2px 7px 0 #fcc202" type="warning">
+      警告按钮
+    </u-button>
+  </u-space>
 </template>
 ```
 
@@ -369,21 +383,23 @@ const text = ref('')
 </script>
 
 <template>
-  <u-button type="primary">
-    主要按钮
-  </u-button>
-  <u-button type="success" ripples>
-    涟漪效果
-  </u-button>
-  <u-button type="warning" ripples>
-    点我试试
-  </u-button>
-  <u-button type="danger" ripples simple>
-    看看我
-  </u-button>
-  <u-button type="success" text ripples ripples-color="green">
-    自定义涟漪颜色
-  </u-button>
+  <u-space spacing="middle">
+    <u-button type="primary">
+      主要按钮
+    </u-button>
+    <u-button type="success" ripples>
+      涟漪效果
+    </u-button>
+    <u-button type="warning" ripples>
+      点我试试
+    </u-button>
+    <u-button type="danger" ripples simple>
+      看看我
+    </u-button>
+    <u-button type="success" text ripples ripples-color="green">
+      自定义涟漪颜色
+    </u-button>
+  </u-space>
 </template>
 ```
 
@@ -405,32 +421,30 @@ const text = ref('')
 </script>
 
 <template>
-  <u-button-group>
-    <u-button round type="primary">
-      左边的
-    </u-button>
-    <u-button round type="primary">
-      中间的
-    </u-button>
-    <u-button round type="primary">
-      右边的
-    </u-button>
-  </u-button-group>
-
-  <br>
-  <br>
-
-  <u-button-group vertical>
-    <u-button type="primary">
-      上边的
-    </u-button>
-    <u-button type="primary">
-      中间的
-    </u-button>
-    <u-button round type="primary">
-      下边的
-    </u-button>
-  </u-button-group>
+  <u-space spacing="middle" :vertical="true">
+    <u-button-group>
+      <u-button round type="primary">
+        左边的
+      </u-button>
+      <u-button round type="primary">
+        中间的
+      </u-button>
+      <u-button round type="primary">
+        右边的
+      </u-button>
+    </u-button-group>
+    <u-button-group vertical>
+      <u-button type="primary">
+        上边的
+      </u-button>
+      <u-button type="primary">
+        中间的
+      </u-button>
+      <u-button round type="primary">
+        下边的
+      </u-button>
+    </u-button-group>
+  </u-space>
 </template>
 ```
 
@@ -451,12 +465,14 @@ const text = ref('')
 </script>
 
 <template>
-  <u-button font-color="#fff" color="#ff0de5" round>
-    自定义颜色
-  </u-button>
-  <u-button font-color="#fff" color="#22c1c3" loading>
-    loading
-  </u-button>
+  <u-space spacing="middle">
+    <u-button font-color="#fff" color="#ff0de5" round>
+      自定义颜色
+    </u-button>
+    <u-button font-color="#fff" color="#22c1c3" loading>
+      loading
+    </u-button>
+  </u-space>
 </template>
 ```
 
@@ -534,7 +550,7 @@ import type {
 
 ## Contributors
 
-<!-- <a href="https://github.com/Tyh2001" target="_blank">
+<a href="https://github.com/Tyh2001" target="_blank">
   <u-avatar round src="https://avatars.githubusercontent.com/u/73180970?v=4" />
 </a>
 
@@ -544,7 +560,7 @@ import type {
 
 <a href="https://github.com/long-life233" target="_blank">
   <u-avatar round src="https://avatars.githubusercontent.com/u/77321887?v=4" />
-</a> -->
+</a>
 
 <style scoped>
 .u-button {
