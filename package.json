@@ -23,6 +23,7 @@
     "build:theme": "vite build --config vite.config.theme.ts",
     "build:icon": "rimraf dist-icon && vite build --config vite.config.icon.ts",
     "build:shared": "rimraf dist-shared && vite build --config vite.config.shared.ts",
+    "dev:docs": "pnpm -C docs dev",
     "preview": "turbo preview",
     "test": "vitest",
     "test:all": "turbo test",

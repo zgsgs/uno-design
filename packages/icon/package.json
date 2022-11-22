@@ -4,5 +4,8 @@
   "description": "Special svg icon library for uno-design.",
   "author": "",
   "license": "ISC",
-  "main": "index.ts"
+  "sideEffects": false,
+  "main": "index",
+  "module": "index",
+  "types": "index.d.ts"
 }

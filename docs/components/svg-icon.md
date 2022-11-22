@@ -50,11 +50,11 @@ import {
 
 <template>
   <u-svg-icon>
-    <u-icon-apps />
+    <IconApps />
   </u-svg-icon>
 
   <u-svg-icon color="red">
-    <u-icon-bluetooth />
+    <IconBluetooth />
   </u-svg-icon>
 
   <u-svg-icon size="34px" :icon="IconBook" />

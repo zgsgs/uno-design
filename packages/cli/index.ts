@@ -137,7 +137,7 @@ async function incrementTest(): Promise<void> {
 }
 
 async function incrementDocs(): Promise<void> {
-  const outputDir: string = path.resolve(__dirname, `../../docs/components/${compName}`)
+  const outputDir: string = path.resolve(__dirname, '../../docs/components')
   const tplDir: string = path.resolve(__dirname, './template/docs')
 
   await superEjsGenerateDir(outputDir, tplDir)
