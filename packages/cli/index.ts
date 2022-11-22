@@ -67,13 +67,14 @@ function getCompName(): string {
   process.exit(0)
 }
 
-async function generate(): Promise<[void, void, void, void, void]> {
+async function generate(): Promise<[void, void, void, void, void, void]> {
   updatedFiles.push(
     `packages/web-vue/${compName}/**`,
     'packages/web-vue/index.ts',
     `packages/theme/src/${compName}.scss`,
     'packages/theme/index.scss',
     `packages/web-vue/${compName}/__test__/${compName}.spec.ts`,
+    `docs/components/${compName}.md`,
   )
   const catchError = async (callback: Function, info: string): Promise<void> => {
     try {
@@ -89,17 +90,16 @@ async function generate(): Promise<[void, void, void, void, void]> {
     catchError(incrementStyle, '🚧 样式文件创建失败'),
     catchError(updateStyleEntry, '🚧 样式入口修改失败'),
     catchError(incrementTest, '🚧 测试文件创建失败'),
+    catchError(incrementDocs, '🚧 文档文件创建失败'),
   ] as const)
 }
 
 async function generateComponentDir(): Promise<void> {
   const tplDir: string = path.resolve(__dirname, './template/component')
 
-  // 编译文件内容
   await superEjsGenerateDir(outputDir, tplDir)
 }
 
-// 修改组件入口文件
 async function updateComponentEntry(): Promise<void> {
   const entryFilePath: string = path.resolve(
     __dirname,
@@ -112,34 +112,38 @@ async function updateComponentEntry(): Promise<void> {
   await fsExtra.writeFile(entryFilePath, content)
 }
 
-// 创建样式文件
 async function incrementStyle(): Promise<void> {
   const outputDir: string = path.resolve(__dirname, '../theme/src')
   const tplDir: string = path.resolve(__dirname, './template/style')
 
-  // 编译文件内容
   await superEjsGenerateDir(outputDir, tplDir)
 }
 
-// 添加样式入口
 async function updateStyleEntry(): Promise<void> {
   const entryFilePath: string = path.resolve(
     __dirname,
     '../theme/index.scss',
   )
-  let content: string = (await fsExtra.readFile(entryFilePath)).toString()
-  content = `${content.slice(0, -1)}\n@use './src/${compName}.scss';\n`
+  const content = `${(await fsExtra.readFile(entryFilePath)).toString().slice(0, -1)}\n@use './src/${compName}.scss';\n`
 
   await fsExtra.writeFile(entryFilePath, content)
 }
 
-// 添加测试文件
 async function incrementTest(): Promise<void> {
   const outputDir: string = path.resolve(__dirname, `../web-vue/${compName}/__test__`)
   const tplDir: string = path.resolve(__dirname, './template/test')
+
   await superEjsGenerateDir(outputDir, tplDir)
 }
 
+async function incrementDocs(): Promise<void> {
+  const outputDir: string = path.resolve(__dirname, `../../docs/components/${compName}`)
+  const tplDir: string = path.resolve(__dirname, './template/docs')
+
+  await superEjsGenerateDir(outputDir, tplDir)
+}
+
+// 编译文件内容
 async function superEjsGenerateDir(outputDir: string, tplDir: string): Promise<void> {
   return await superEjs.gerenateDir(
     outputDir,

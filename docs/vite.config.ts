@@ -12,7 +12,6 @@ export default (): UserConfigExport => {
       exclude: ['vitepress'],
     },
     server: {
-      open: true,
       port: 9999, // 端口号
     },
     css: {

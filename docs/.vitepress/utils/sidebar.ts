@@ -26,6 +26,7 @@ export const sidebar = {
       items: [
         { text: '更新日志', link: '/docs/changelog' },
         { text: '里程碑', link: '/docs/milepost' },
+        { text: 'Demo 演示方案探索', link: '/docs/demo' },
       ],
     },
   ],

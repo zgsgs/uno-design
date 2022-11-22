@@ -2,8 +2,8 @@
 
 使用 svg 的图标库
 
-- [源代码](https://github.com/zgsgs/uno-design/tree/master/packages/uno-design/svg-icon)
-- [文档编辑](https://github.com/zgsgs/uno-design/blob/master/docs/docs/components/svg-icon.md)
+- [源代码](https://github.com/zgsgs/uno-design/tree/master/packages/web-vue/svg-icon)
+- [文档编辑](https://github.com/zgsgs/uno-design/blob/master/docs/components/svg-icon.md)
 
 ## 使用之前
 
@@ -73,7 +73,7 @@ import {
 </template>
 ```
 
-## Attributes
+## Svg Icon Attributes
 
 | 参数    | 说明               | 类型                       | 可选值 | 默认值 |
 | ------- | ------------------ | -------------------------- | ------ | ------ |
@@ -82,7 +82,7 @@ import {
 | `icon`  | icon 内容          | object (VNode / Component) | ——     | ——     |
 | `click` | 点击之后触发的回调 | Function                   | ——     | ——     |
 
-## Slots
+## Svg Icon Slots
 
 | 名称      | 说明        |
 | --------- | ----------- |
@@ -91,7 +91,7 @@ import {
 ## Contributors
 
 <a href="https://github.com/zgsgs" target="_blank">
-  <u-avatar round src="https://avatars.githubusercontent.com/u/73180970?v=4" />
+  <u-avatar round src="https://avatars.githubusercontent.com/u/22882957?v=4" />
 </a>
 
 <script setup lang="ts">
