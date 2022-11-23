@@ -5,6 +5,6 @@ export const USvgIcon = install(SvgIcon)
 
 export type SvgIconInstance = InstanceType<typeof SvgIcon>
 
-export * from './src/type.d'
+export * from './src/type'
 
 export default SvgIcon

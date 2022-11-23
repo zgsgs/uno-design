@@ -4,11 +4,10 @@ import { computed } from 'vue'
 import type { ClassListInterface, HandleMouseEventInterface } from '../../_types'
 import { sizeChange } from '../../_utils'
 import { runCallback } from '../../../shared/utils'
-import { Emits, Props } from './props'
+import { Props } from './props'
 import type { LinkPropsType } from './props'
 
 const prop: LinkPropsType = defineProps(Props)
-defineEmits(Emits)
 
 const classList: ComputedRef<ClassListInterface> = computed((): ClassListInterface => {
   const { type, state, prohibit, noCopy } = prop

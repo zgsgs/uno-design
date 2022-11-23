@@ -62,6 +62,4 @@ export const Props = {
   },
 } as const
 
-export const Emits = {} as const
-
 export type LinkPropsType = ExtractPropTypes<typeof Props>
