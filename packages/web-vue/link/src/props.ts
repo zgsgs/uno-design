@@ -3,6 +3,9 @@ import type { Component, ExtractPropTypes, PropType, VNode } from 'vue'
 import type { LinkHoverType, LinkTargetType, LinkType } from './type'
 
 export const Props = {
+  /**
+   * 类型
+   */
   type: {
     type: String,
     default: 'primary',
@@ -10,14 +13,23 @@ export const Props = {
       return (['default', 'primary', 'success', 'danger', 'warning'] as const).includes(val)
     },
   },
+  /**
+   * 链接地址
+   */
   href: {
     type: String,
     default: (): null => null,
   },
+  /**
+   * 文字大小
+   */
   size: {
     type: [String, Number] as PropType<string | number>,
     default: (): null => null,
   },
+  /**
+   * 链接的状态
+   */
   state: {
     type: String as PropType<LinkHoverType>,
     default: (): LinkHoverType => '',
@@ -25,10 +37,16 @@ export const Props = {
       return (['line', 'bag', ''] as const).includes(val)
     },
   },
+  /**
+   * 是否禁用
+   */
   prohibit: {
     type: Boolean,
     default: false,
   },
+  /**
+   * 原生 target 属性
+   */
   target: {
     type: String as PropType<LinkTargetType>,
     default: (): LinkTargetType => '',
