@@ -4,7 +4,8 @@ import type { ExtractPropTypes, InjectionKey, PropType } from 'vue'
 export const Props = {
   size: {
     type: String as PropType<ButtonSizeType>,
-    default: (val: ButtonSizeType): boolean => {
+    default: 'middle',
+    validator: (val: ButtonSizeType): boolean => {
       return (['large', 'middle', 'small', 'mini'] as const).includes(val)
     },
   },

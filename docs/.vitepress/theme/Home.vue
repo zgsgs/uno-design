@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import { bottomList, contributors } from './src'
-import Logo from './images/Logo.vue'
 </script>
 
 <template>
