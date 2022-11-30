@@ -22,7 +22,7 @@ const classList: ComputedRef<ClassListInterface> = computed((): ClassListInterfa
 const styleList: ComputedRef<CSSProperties> = computed((): CSSProperties => {
   // const { } = prop
 
-  return {  } as const
+  return { } as const
 })
 </script>
 
