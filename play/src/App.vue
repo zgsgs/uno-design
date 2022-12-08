@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { UButton, USpace } from '../../packages/web-vue/index'
+import { UButton, UButtonGroup, USpace } from '../../packages/web-vue/index'
 </script>
 
 <template>
@@ -14,6 +14,12 @@ import { UButton, USpace } from '../../packages/web-vue/index'
       Show3
     </UButton>
   </USpace>
+  <br>
+  <UButtonGroup vertical>
+    <UButton>dddd</UButton>
+    <UButton>dddd</UButton>
+    <UButton>dddd</UButton>
+  </UButtonGroup>
 </template>
 
 <style scoped>
