@@ -1,12 +1,12 @@
 import type { App } from 'vue'
 import { h } from 'vue'
 import Theme from 'vitepress/theme'
+import { vuePlugin } from 'vitepress-demo-editor'
+import 'vitepress-demo-editor/dist/style.css'
 import './style/vitepress.scss'
 import '@uno-design/theme'
-import { vuePlugin } from 'vitepress-demo-editor'
 import UnoDesign from '../../../packages/web-vue/index'
-import { vpDemo, vpSearch } from './components'
-import 'vitepress-demo-editor/dist/style.css'
+import { Home, vpDemo, vpSearch } from './components'
 
 export default {
   ...Theme,
@@ -23,6 +23,7 @@ export default {
   },
   enhanceApp({ app }: { app: App }) {
     app.component('VpDemo', vpDemo)
+    app.component('Home', Home)
     app.use(UnoDesign)
     app.use(vuePlugin, {
       defaultDirection: 'column', // 默认显示方向

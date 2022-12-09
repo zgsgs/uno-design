@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { bottomList, contributors } from './src'
+import { bottomList, contributors } from '../src'
 </script>
 
 <template>
