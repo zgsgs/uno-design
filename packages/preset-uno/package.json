@@ -1,0 +1,35 @@
+{
+  "name": "@uno-design/preset-uno",
+  "type": "module",
+  "version": "0.0.2",
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "homepage": "https://github.com/uno-design/uno-design#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uno-design/uno-design.git",
+    "directory": "packages/preset-uno"
+  },
+  "bugs": {
+    "url": "https://github.com/uno-design/uno-design/issues"
+  },
+  "keywords": [],
+  "exports": {
+    ".": {
+      "types": "./dist/preset-uno.d.ts",
+      "require": "./dist/preset-uno.js",
+      "import": "./dist/preset-uno.mjs"
+    }
+  },
+  "main": "./dist/preset-uno.js",
+  "module": "./dist/preset-uno.mjs",
+  "types": "./dist/preset-uno.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "stub": "vite build --watch"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "uno-design",
+  "type": "module",
+  "version": "0.0.0",
+  "exports": {
+    ".": {
+      "require": "./dist/uno-design.umd.cjs",
+      "import": "./dist/uno-design.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "main": "./dist/uno-design.umd.cjs",
+  "module": "./dist/uno-design.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "stub": "vite build --watch"
+  },
+  "dependencies": {
+    "@uno-design/preset-uno": "workspace:*"
+  }
+}
