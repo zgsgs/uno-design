@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@uno-design/web-vue": "workspace:*",
     "@vue/repl": "^1.3.2"
   },
   "devDependencies": {

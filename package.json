@@ -36,6 +36,7 @@
     "coverage": "vitest --coverage"
   },
   "dependencies": {
+    "@uno-design/web-vue": "workspace:*",
     "vue": "^3.2.41"
   },
   "devDependencies": {
@@ -46,10 +47,7 @@
     "@types/file-saver": "^2.0.5",
     "@types/fs-extra": "^9.0.13",
     "@types/node": "^18.11.8",
-    "@uno-design/icon": "workspace:*",
     "@uno-design/shared": "workspace:*",
-    "@uno-design/theme": "workspace:*",
-    "@uno-design/web-vue": "workspace:*",
     "@vitejs/plugin-vue": "^3.2.0",
     "@vitejs/plugin-vue-jsx": "^3.0.0",
     "@vitest/coverage-c8": "^0.25.2",

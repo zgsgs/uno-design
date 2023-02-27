@@ -1,7 +1,6 @@
 import { createApp } from 'vue'
 // 开发阶段引入
-import '@uno-design/theme'
-import UnoDesign from '../../packages/web-vue/index'
+import UnoDesign from '@uno-design/web-vue'
 import App from './App.vue'
 
 // 移动端测试

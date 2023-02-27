@@ -26,6 +26,7 @@ function UnoDesignResolver(): {
   type: string
   resolve: (name: string) => ResolveReturnInterface | undefined
 }
+
 function UnoDesignResolver() {
   return {
     type: 'component',
@@ -37,7 +38,7 @@ function UnoDesignResolver() {
         return {
           name,
           sideEffects,
-          from: 'uno-design',
+          from: '@uno-design/web-vue',
         }
       }
       return undefined

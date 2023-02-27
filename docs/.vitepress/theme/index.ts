@@ -4,8 +4,7 @@ import Theme from 'vitepress/theme'
 import { vuePlugin } from 'vitepress-demo-editor'
 import 'vitepress-demo-editor/dist/style.css'
 import './style/vitepress.scss'
-import '@uno-design/theme'
-import UnoDesign from '../../../packages/web-vue/index'
+import UnoDesign from '@uno-design/web-vue'
 import { Home, vpDemo, vpSearch } from './components'
 
 export default {

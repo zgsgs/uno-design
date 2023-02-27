@@ -1,8 +1,7 @@
 import { createApp } from 'vue'
 import '@vue/repl/style.css'
-import '@uno-design/theme'
 import './style.css'
-import UnoDesign from '../../web-vue/index'
+import UnoDesign from '@uno-design/web-vue'
 
 import App from './App.vue'
 
