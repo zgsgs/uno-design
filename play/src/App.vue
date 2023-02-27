@@ -1,26 +1,22 @@
-<script setup lang="ts">
-import { UButton, UButtonGroup, USpace } from '../../packages/web-vue/index'
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <USpace row-gap="8">
-    <UButton type="success">
-      Show1
-    </UButton>
-    <UButton type="success">
-      Show2
-    </UButton>
-    <UButton type="success">
-      Show3
-    </UButton>
-  </USpace>
-  <br>
-  <UButtonGroup vertical>
-    <UButton>dddd</UButton>
-    <UButton>dddd</UButton>
-    <UButton>dddd</UButton>
-  </UButtonGroup>
+  <u-button>
+    Default Button
+  </u-button>
+  <u-button type="primary" as="span" @click="onClick">
+    Primary Button
+  </u-button>
+  <u-button type="success">
+    success Button
+  </u-button>
+  <u-button type="warning">
+    Warning Button
+  </u-button>
+  <u-button type="info">
+    Info Button
+  </u-button>
+  <u-button type="danger">
+    Danger Button
+  </u-button>
 </template>
-
-<style scoped>
-</style>

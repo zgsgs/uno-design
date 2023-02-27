@@ -4,14 +4,14 @@ import path from 'path'
  * 获取指令运行根路径
  * @descrition 末尾不带斜杠
  */
-export function getRuntimeRootPath() {
+export function getRuntimeRootPath(): string {
   return path.resolve(process.cwd())
 }
 /**
  * 获取项目根路径
  * @descrition 末尾不带斜杠
  */
-export function getRootPath() {
+export function getRootPath(): string {
   return path.resolve(__dirname, '../../../..')
 }
 
@@ -28,18 +28,18 @@ export function getPackagesPath(path = 'packages') {
  * 获取项目 svg 路径
  * @descrition 末尾不带斜杠
  */
-export function getLocalIconPath() {
+export function getLocalIconPath(): string {
   return `${getPackagesPath()}/icon/src`
 }
 
 /* -- 获取输出路径 -- */
-export function getPlayOutDir() {
+export function getPlayOutDir(): string {
   return `${getRootPath()}/dist-paly`
 }
 
-export function getWebVueOutDir() {
+export function getWebVueOutDir(): string {
   return `${getRootPath()}/dist`
 }
-export function getWebVueEntry() {
+export function getWebVueEntry(): string {
   return `${getPackagesPath()}/web-vue/index.ts`
 }

@@ -4,13 +4,13 @@
   "version": "0.0.0",
   "exports": {
     ".": {
-      "require": "./dist/uno-design.umd.cjs",
-      "import": "./dist/uno-design.js"
+      "require": "./dist/web-vue.umd.cjs",
+      "import": "./dist/web-vue.js"
     },
     "./dist/style.css": "./dist/style.css"
   },
-  "main": "./dist/uno-design.umd.cjs",
-  "module": "./dist/uno-design.js",
+  "main": "./dist/web-vue.umd.cjs",
+  "module": "./dist/web-vue.js",
   "files": [
     "dist"
   ],
