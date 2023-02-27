@@ -5,31 +5,20 @@
   "author": "",
   "license": "ISC",
   "exports": {
-    "./types": {
-      "require": "./dist/types/index.js",
-      "import": "./dist/types/index.mjs"
-    },
-    "./utils": {
-      "require": "./dist/utils/index.js",
-      "import": "./dist/utils/index.mjs"
-    },
-    "./configs/*.json": "./configs/*.json",
-    "./configs/*": {
-      "types": "./dist/configs/*.d.ts",
-      "require": "./dist/configs/*.js",
-      "import": "./dist/configs/*.mjs"
+    ".": {
+      "types": "./dist/shared.d.ts",
+      "require": "./dist/shared.js",
+      "import": "./dist/shared.mjs"
     }
   },
-  "main": "index.ts",
+  "main": "./dist/shared.js",
+  "module": "./dist/shared.mjs",
+  "types": "./dist/shared.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "dev": "tsup --watch",
-    "build": "tsup"
-  },
-  "browser": {
-    "./types": "./dist/types/index.js",
-    "./utils": "./dist/utils/index.js"
-  },
-  "devDependencies": {
-    "tsup": "^5.12.1"
+    "build": "vite build",
+    "stub": "vite build --watch"
   }
 }

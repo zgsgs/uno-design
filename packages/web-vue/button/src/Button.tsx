@@ -1,5 +1,4 @@
 import { defineComponent, h } from 'vue'
-import { UIcon } from '../../icon'
 import { ButtonProps } from './props'
 import { EButtonSize, EButtonType } from './type'
 
@@ -10,7 +9,7 @@ export default defineComponent({
   props: ButtonProps,
 
   render() {
-    const { to, type, size, plain, dashed, round, icon, $slots } = this
+    const { to, type, size, plain, dashed, round, $slots } = this
     return (
       h(
         to ? 'a' : 'button',
@@ -26,7 +25,6 @@ export default defineComponent({
           href: to,
         },
         [
-          icon ? h(UIcon, { icon }) : undefined,
           $slots.default?.(),
         ],
       )

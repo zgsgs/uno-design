@@ -1,5 +1,5 @@
 {
-  "name": "uno-ux-monorepo",
+  "name": "uno-design-monorepo",
   "type": "module",
   "version": "0.0.0",
   "private": true,
@@ -15,14 +15,11 @@
   },
   "scripts": {
     "prepare": "husky install",
+    "play": "pnpm --filter play dev",
     "dev": "turbo dev",
     "clean": "rimraf dist",
-    "build": "pnpm clean && pnpm build:css && pnpm build:theme && vite build",
+    "build": "pnpm -r --parallel -F \"./packages/{preset-uno,resolver,shared,uno-design}\" run build",
     "build:all": "turbo build",
-    "build:css": "vite build --config vite.config.css.ts",
-    "build:theme": "vite build --config vite.config.theme.ts",
-    "build:icon": "rimraf dist-icon && vite build --config vite.config.icon.ts",
-    "build:shared": "rimraf dist-shared && vite build --config vite.config.shared.ts",
     "dev:docs": "pnpm -C docs dev",
     "preview": "turbo preview",
     "test": "vitest",

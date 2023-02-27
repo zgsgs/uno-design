@@ -66,7 +66,7 @@ export class Ripples implements RipplesInterface {
       success: '#52b35e',
       danger: '#ff0200',
       warning: '#fcc202',
-      info: '#cc55bb',
+      info: '#8acbec',
     } as const
 
     /**

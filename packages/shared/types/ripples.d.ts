@@ -1,4 +1,4 @@
-import type { ButtonType } from '../../web-vue/button/src/type'
+import type { ButtonType } from '@uno-design/web-vue'
 
 /**
  * Ripples 类所需要的 props 参数

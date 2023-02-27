@@ -1,4 +1,4 @@
-import { UMessage } from '@uno-design/web-vue'
+// import { UMessage } from '@uno-design/web-vue'
 
 export const onCopy = (target: string): void => {
   const copyInput: HTMLInputElement = document.createElement('input')
@@ -8,8 +8,8 @@ export const onCopy = (target: string): void => {
   document.execCommand('Copy')
   document.body.removeChild(copyInput)
 
-  UMessage({
-    message: '复制成功',
-    type: 'primary',
-  })
+  // UMessage({
+  //   message: '复制成功',
+  //   type: 'primary',
+  // })
 }
