@@ -1,16 +1,22 @@
 import type { ButtonHTMLAttributes } from 'vue'
-
 export type { ButtonPropsType } from './props'
 
-export type ButtonSizeType = 'large' | 'middle' | 'small' | 'mini'
+export enum EButtonType {
+  primary = 'u-primary',
+  success = 'u-success',
+  warning = 'u-warning',
+  danger = 'u-danger',
+  info = 'u-info',
+}
 
-export type ButtonTargetType = '_blank' | '_self' | '_parent' | '_top'
+export type ButtonType = keyof typeof EButtonType
 
-export type ButtonType =
-  | 'default'
-  | 'primary'
-  | 'success'
-  | 'danger'
-  | 'warning'
+export enum EButtonSize {
+  'small' = 'u-sm',
+  'medium' = 'u-base',
+  'large' = 'u-xl',
+}
+
+export type ButtonSize = keyof typeof EButtonSize
 
 export type ButtonNativeType = NonNullable<ButtonHTMLAttributes['type']>

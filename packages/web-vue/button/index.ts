@@ -1,5 +1,5 @@
 import { install } from '../_utils'
-import Button from './src/button.vue'
+import Button from './src/Button'
 
 export const UButton = install(Button)
 
