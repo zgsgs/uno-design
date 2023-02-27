@@ -1,5 +1,5 @@
 import { install } from '../_utils'
-import <%= displayName %> from './src/<%= name %>.vue'
+import <%= displayName %> from './src/<%= name %>'
 
 export const <%= upperPrefix %><%= displayName %> = install(<%= displayName %>)
 
