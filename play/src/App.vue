@@ -1,7 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const onClick = () => {
+  // console.log('onClick')
+}
+</script>
 
 <template>
-  <u-button>
+  <u-button to="https://google.com" target="_bank">
     Default Button
   </u-button>
   <u-button type="primary" as="span" @click="onClick">
