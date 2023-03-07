@@ -15,12 +15,11 @@
   },
   "scripts": {
     "prepare": "husky install",
-    "play": "pnpm --filter play dev",
     "dev": "turbo dev",
-    "clean": "rimraf dist",
+    "dev:docs": "pnpm -C docs dev",
+    "play": "pnpm --filter play dev",
     "build": "pnpm -r --parallel -F \"./packages/{preset-uno,resolver,shared,uno-design}\" run build",
     "build:all": "turbo build",
-    "dev:docs": "pnpm -C docs dev",
     "preview": "turbo preview",
     "test": "vitest",
     "test:all": "turbo test",
@@ -30,7 +29,8 @@
     "new": "pnpm -C packages/cli new",
     "commit": "cz",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "coverage": "vitest --coverage"
+    "coverage": "vitest --coverage",
+    "clean": "rimraf dist"
   },
   "dependencies": {
     "@uno-design/web-vue": "workspace:*",

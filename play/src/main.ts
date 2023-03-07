@@ -12,4 +12,6 @@ import '@uno-design/web-vue/dist/style.css'
 // import UnoDesign from '../../dist'
 // import '../dist/dist/index.css'
 
-createApp(App).use(UnoDesign).mount('#app')
+const app = createApp(App)
+app.use(UnoDesign)
+app.mount('#app')
