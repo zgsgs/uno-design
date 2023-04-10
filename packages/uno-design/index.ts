@@ -1,9 +1,9 @@
 import 'uno.css'
 import type { App } from 'vue'
-import * as components from '../web-vue'
+import * as components from '../components'
 import { version } from './package.json'
 
-export * from '../web-vue'
+export * from '../components'
 
 const unoDesign = {
   version,
