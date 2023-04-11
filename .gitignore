@@ -28,3 +28,6 @@ dist-*
 .turbo
 stats.html
 coverage
+
+auto-imports.d.ts
+components.d.ts
