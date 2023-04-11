@@ -3,9 +3,11 @@ import { h } from 'vue'
 import Theme from 'vitepress/theme'
 import { vuePlugin } from 'vitepress-demo-editor'
 import 'vitepress-demo-editor/dist/style.css'
-import './style/vitepress.scss'
 import UnoDesign from '@uno-design/web-vue'
 import { Home, vpDemo, vpSearch } from './components'
+import 'uno.css'
+import './styles/main.css'
+import '@uno-design/web-vue/dist/style.css'
 
 export default {
   ...Theme,

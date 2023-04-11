@@ -95,9 +95,9 @@ import {
 </a>
 
 <script setup lang="ts">
-import Svg from '@uno-design/icon'
-import demo1Vue from './_demos/svg-icon/demo1.vue'
-import demo2Vue from './_demos/svg-icon/demo2.vue'
+// import Svg from '@uno-design/icon'
+// import demo1Vue from './_demos/svg-icon/demo1.vue'
+// import demo2Vue from './_demos/svg-icon/demo2.vue'
 
-const num = Object.keys(Svg).length
+// const num = Object.keys(Svg).length
 </script>

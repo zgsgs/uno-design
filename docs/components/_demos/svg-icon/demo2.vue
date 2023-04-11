@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<!-- <script lang="ts" setup>
 import Svg from '@uno-design/icon'
 import { onCopy } from '@uno-design/shared/utils'
 
@@ -58,4 +58,4 @@ const handleClick = (icon: string): void => {
       width: 80px;
     }
   }
-</style>
+</style> -->

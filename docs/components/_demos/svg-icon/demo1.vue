@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<!-- <script lang="ts" setup>
 import {
   IconApps,
   IconBluetooth,
@@ -16,4 +16,4 @@ import {
   </u-svg-icon>
 
   <u-svg-icon size="34px" :icon="IconBook" />
-</template>
+</template> -->

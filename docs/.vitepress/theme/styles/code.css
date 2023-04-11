@@ -1,0 +1,55 @@
+@import 'prism-theme-vars/base.css';
+@import "prism-theme-vars/marker.css";
+
+html:not(.dark) {
+  --prism-foreground: #393a34;
+  --prism-background: #f5f7fa;
+  --prism-comment: #848486;
+  --prism-namespace: #444444;
+  --prism-string: #bc8671;
+  --prism-punctuation: #a8a9cc;
+  --prism-literal: #36acaa;
+  --prism-keyword: #c792ea;
+  --prism-function: #6196cc;
+  --prism-deleted: #3182bd;
+  --prism-class: #2b91af;
+  --prism-builtin: #3182bd;
+  --prism-property: #717c11;
+  --prism-regex: #ad502b;
+}
+
+html.dark {
+  --prism-foreground: #a6accd;
+  --prism-background: #181818;
+  --prism-namespace: #758575;
+  --prism-comment: #758575;
+  --prism-namespace: #db889a;
+  --prism-string: #c3e88d;
+  --prism-punctuation: #89ddff;
+  --prism-literal: #429988;
+  --prism-keyword: #89ddff;
+  --prism-function: #82aaff;
+  --prism-deleted: #bc6066;
+  --prism-class: #54b1bf;
+  --prism-builtin: #3182bd;
+  --prism-property: #c792ea;
+  --prism-regex: #ab5e3f;
+}
+
+div[class*='language-'] {
+  margin: 0 !important;
+  background-color: var(--prism-background) !important;
+  border-radius: 0 !important;
+}
+
+code {
+  color: var(--prism-foreground) !important;
+}
+
+[class*='language-'] pre {
+  padding: 0.25rem !important;
+}
+
+[class*='language-'] code {
+  padding: 0 !important;
+}
