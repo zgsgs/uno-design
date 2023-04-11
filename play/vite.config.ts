@@ -1,5 +1,7 @@
 import { defineConfig } from 'vite'
+import DefineOptions from 'unplugin-vue-define-options/vite'
 import vue from '@vitejs/plugin-vue'
+import Unocss from 'unocss/vite'
 
 const htmlPlugin = () => {
   return {
@@ -15,7 +17,12 @@ const htmlPlugin = () => {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(), htmlPlugin()],
+  plugins: [
+    vue(),
+    DefineOptions(),
+    Unocss(),
+    htmlPlugin(),
+  ],
   build: {
     minify: true,
     emptyOutDir: false,
