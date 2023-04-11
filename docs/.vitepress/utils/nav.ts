@@ -1,4 +1,4 @@
-import { version } from '@uno-design/web-vue/package.json'
+import { version } from '../../package.json'
 
 /**
  * 顶部导航栏菜单
@@ -19,7 +19,7 @@ export const nav = [
     link: 'http://localhost:8888/',
   },
   {
-    text: version,
+    text: `v${version}`,
     link: 'https://www.npmjs.com/package/uno-design',
   },
 ]
