@@ -1,35 +1,15 @@
-import vueSetupExtend from 'unplugin-vue-setup-extend-plus/vite'
-import svgLoader from 'vite-svg-loader'
-import type { UserConfigExport } from 'vite'
-import Unocss from 'unocss/vite'
+import { defineConfig, loadEnv } from 'vite'
+import { setupVitePlugins } from './vite/plugins'
 
-export default (): UserConfigExport => {
+export default defineConfig((configEnv) => {
+  const viteEnv = loadEnv(configEnv.mode, process.cwd())
   return {
-    plugins: [
-      vueSetupExtend(), // 组建名设置插件
-      svgLoader(), // svg 插件
-      Unocss(),
-    ],
+    plugins: setupVitePlugins(viteEnv),
     optimizeDeps: {
       exclude: ['vitepress'],
     },
     server: {
       port: 9999, // 端口号
     },
-    css: {
-      postcss: {
-        plugins: [
-          {
-            postcssPlugin: 'internal:charset-removal',
-            AtRule: {
-              charset: (atRule): void => {
-                if (atRule.name === 'charset')
-                  atRule.remove()
-              },
-            },
-          },
-        ],
-      },
-    },
   }
-}
+})
